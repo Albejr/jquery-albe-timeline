@@ -1,0 +1,29 @@
+body { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1em; color: #333; background-color: #EFEFEF; margin: 0; }
+
+h2,
+h3,
+h4,
+h5 { margin-top: 5px; margin-bottom: 5px; line-height: 1;}
+
+section#timeline { list-style: none; position: relative; margin: 20px; padding-top: 50px; display: inline-block; }
+    section#timeline:before { height: 2px; top: auto; bottom: 25px; left: 0; right: 0; position: absolute; content: " "; margin-left: -1.5px; position: absolute; content: " "; background-color: #EF693A; margin-left: -1.5px; }
+    section#timeline div[class*="group"],
+    section#timeline article { display: table-cell; width: 350px; min-width: 350px; max-width: 350px; float: none !important; padding: 0 10px; vertical-align: bottom; position: relative; }
+        section#timeline article:after { content: ''; display: block; clear: both; }
+
+    section#timeline > article > div.panel { top: auto; bottom: 35px; display: inline-block; float: none !important; left: 0 !important; right: 0 !important; width: 100%; margin-bottom: 20px; position: relative; background: #FFF; border: none; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15); -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15); box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15); }
+    section#timeline article div.panel:after { content: ''; position: absolute; bottom: -5px; right: 170px; width: 10px; height: 10px; -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); background: #FFF; }
+
+    section#timeline > article > div.panel .panel-heading { padding: 5px 10px; margin: 0; font-size: 1.2em; background-color: #EF693A; overflow: hidden; text-align: center; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; }
+        section#timeline > article > div.panel .panel-heading .panel-title { color: #FFF; }
+    section#timeline > article > div.panel .panel-body { padding: 15px; position: relative; }
+        section#timeline > article > div.panel .panel-body img { float: left; margin: 0 15px 15px 0; }
+    section#timeline > article > div.panel .panel-footer { padding: 15px; background-color: #EEE; }
+
+    section#timeline article div.panel div.badge { display: block; text-align: center; cursor: none; font-weight: bold; -moz-box-shadow: 0 0 0 2px #EF693A, inset 0 2px 0 rgba(0, 0, 0, 0.1), 0 3px 0 2px rgba(0, 0, 0, 0.15); -webkit-box-shadow: 0 0 0 2px #EF693A, inset 0 2px 0 rgba(0, 0, 0, 0.1), 0 3px 0 2px rgba(0, 0, 0, 0.15); box-shadow: 0 0 0 2px #EF693A, inset 0 2px 0 rgba(0, 0, 0, 0.1), 0 3px 0 2px rgba(0, 0, 0, 0.15); }
+    section#timeline article div.panel div.badge { position: absolute; bottom: -45px; left: 50%; margin: 0 0 0 -15px; border-radius: 50%; font-size: 0.75em; width: 30px; height: 30px; background: #FFF; color: #EF693A; }
+    section#timeline div[class*="group"] { width: 40px; min-width: 40px; max-width: 40px; padding: 0px; border-bottom: 5px solid #EF693A; font-weight: bold; text-align: center; }
+
+    section#timeline article:nth-last-child(2) { width: 40px; min-width: 40px; max-width: 40px; }
+        section#timeline article:nth-last-child(2) div.panel:after { display:none; }
+        section#timeline article:nth-last-child(2) div.panel div.badge { background-color: #EF693A; width: 20px; height: 20px; margin: 0 0 5px 5px; }
