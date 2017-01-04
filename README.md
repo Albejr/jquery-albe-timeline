@@ -18,11 +18,10 @@ Este plugin é capaz de lidar com praticamente qualquer forma de conteúdo (incl
 <script src="https://cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
 <script src="jquery-albe-timeline-1.0.0.min.js"></script>
 ```
-#### Realize a chamada
+#### Crie a lista de dados
 ```html
-<div id="myTimeline"></div>
-
 <script type="text/javascript>
+
   //Json Object
   var data = [{
           time: '2015-03-29',
@@ -58,14 +57,21 @@ Este plugin é capaz de lidar com praticamente qualquer forma de conteúdo (incl
       }
   ];
 
-  $(document).ready(function () {
-
-      $('#myTimeline').albeTimeline(data);
-
-  });
 </script>
 ```
-#### Markup Html
+#### Realize a chamada
+```html
+<div id="myTimeline"></div>
+
+<script type="text/javascript>
+
+  $(document).ready(function () {
+      $('#myTimeline').albeTimeline(data);
+  });
+  
+</script>
+```
+#### Estrutura Html
 Usando os padrões do plugin, teremos um resultado parecido com isso:
 ```html
   <div id="myTimeline">
