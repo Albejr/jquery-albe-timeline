@@ -1,6 +1,8 @@
 # Albe Timeline
 Crie uma linha do tempo a partir de uma lista de dados em Json, altamente personalizável apenas com CSS e HTML.
+
 Os dados serão agrupados automaticamente pelo ano e a série de eventos ordenada pela data conforme parametro.
+
 Este plugin é capaz de lidar com praticamente qualquer forma de conteúdo (incluindo imagens, vídeo, áudio). 
 
 ## Demostração
@@ -9,6 +11,12 @@ Este plugin é capaz de lidar com praticamente qualquer forma de conteúdo (incl
 
 ####VERTICAL
 [Template 1](http://timeline.albertino.eti.br/vertical-template1 "Template Vertical")
+
+## Requisitos
+* Necessário
+[Jquery](https://jquery.com)
+* Opcional
+[Animate CSS](daneden.github.io/animate.css)
 
 ## Como usar
 #### Carregue o plugin e dependências
@@ -19,8 +27,8 @@ Este plugin é capaz de lidar com praticamente qualquer forma de conteúdo (incl
 <script src="jquery-albe-timeline-1.0.0.min.js"></script>
 ```
 #### Crie a lista de dados
-```html
-<script type="text/javascript>
+```js
+<script type="text/javascript">
 
   //Json Object
   var data = [{
@@ -62,14 +70,33 @@ Este plugin é capaz de lidar com praticamente qualquer forma de conteúdo (incl
 #### Realize a chamada
 ```html
 <div id="myTimeline"></div>
-
-<script type="text/javascript>
+```
+```js
+<script type="text/javascript">
 
   $(document).ready(function () {
       $('#myTimeline').albeTimeline(data);
   });
   
 </script>
+```
+* Instancie com opções:
+```js
+  //**myTimeline**, define o identificador do elemento que irá receber toda a linha de tempo (por exemplo, uma DIV) e deve ser único para cada timeline na página.
+  //**data**, define o objeto Json contendo a lista de dados a serem exibidos.
+  
+  $("#myTimeline").albeTimeline(data, {
+    effect: "fadeInUp",
+    //Efeito de apresentação dos itens
+    //"fadeInUp", "bounceIn", "fadeInUp", etc
+    showMenu: true,
+    //Define a exibição de um menu com ancora para os agrupamentos de anos
+    language: "pt-br",
+    //Especifica a linguagem de exibição dos textos
+    //"pt-br" ou "en-us"
+    sortDesc: true,
+    //Especifica se os dados serão ordenados pela data ou exibidos exatamente como estão
+  });
 ```
 #### Estrutura Html
 Usando os padrões do plugin, teremos um resultado parecido com isso:
@@ -110,5 +137,12 @@ Usando os padrões do plugin, teremos um resultado parecido com isso:
     </section>
   </div>
 ```
-## Licença
+## Notas
+* O objeto Json também é aceito no formato de string. Por exemplo:
+var data = '[{"time": "2016-01-20", "body": [{ "tag": "h1", "content": "Lorem ipsum" }, { "tag": "p", "content": "massa, cursus quisque leo quisque dui." }]}]';
+
+* O elemento **time** deve atender ao padrão ISO 8601
+sempre no formato: [yyyy-mm-dd]
+
+## Licença de uso
 O plugin é de código aberto e liberado para uso comercial sem custo. Peço somente que [me comunique] (http://albertino.eti.br "contato") caso implementá-lo em algum lugar, para que eu possa dar uma olhada ou adicioná-lo aqui como demostração.
