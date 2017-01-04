@@ -139,10 +139,25 @@ Usando os padrões do plugin, teremos um resultado parecido com isso:
 ```
 ## Notas
 * O objeto Json também é aceito no formato de string. Por exemplo:
+
 var data = '[{"time": "2016-01-20", "body": [{ "tag": "h1", "content": "Lorem ipsum" }, { "tag": "p", "content": "massa, cursus quisque leo quisque dui." }]}]';
 
-* O elemento **time** deve atender ao padrão ISO 8601
-sempre no formato: [yyyy-mm-dd]
+* O elemento **time** deve atender ao padrão ISO 8601 sempre no formato ano-mês-dia 
+
+"yyyy-mm-dd"
+
+* Caso haja a necessidade de passar uma classe CSS como atributo do elemento, utilize o nome da prorpiedade **cssclass**. Por exemplo:
+
+...
+body: [{
+  tag: 'img',
+  attr: {
+    src: '../img/qrcode.png',
+    width: '150px',
+    cssclass: 'img-responsive'
+  }
+}
+...
 
 ## Licença de uso
 O plugin é de código aberto e liberado para uso comercial sem custo. Peço somente que [me comunique] (http://albertino.eti.br "contato") caso implementá-lo em algum lugar, para que eu possa dar uma olhada ou adicioná-lo aqui como demostração.
