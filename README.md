@@ -1,5 +1,5 @@
 # Albe Timeline
-Crie uma linha do tempo a partir de uma lista de dados em Json, altamente personalizável apenas com CSS e HTML.
+Crie uma linha do tempo a partir de uma lista de dados em JSON, altamente personalizável apenas com CSS e HTML.
 
 Os dados serão agrupados automaticamente pelo ano e a série de eventos ordenada pela data conforme parametro.
 
