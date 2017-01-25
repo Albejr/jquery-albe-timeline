@@ -70,7 +70,7 @@ $(document).ready(function () {
 
     //Call function with JSON OBJECT
     $("#myTimeline").albeTimeline(data, {
-        //effect: "zoomIn",
+        effect: "zoomIn",
         showMenu: false,
         //sortDesc: false,
 		//language: "en-us"
