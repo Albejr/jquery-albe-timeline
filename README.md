@@ -16,7 +16,7 @@ Este plugin é capaz de lidar com praticamente qualquer forma de conteúdo (incl
 * Necessário
 [Jquery](https://jquery.com)
 * Opcional
-[Animate CSS](daneden.github.io/animate.css)
+[Animate CSS](https://daneden.github.io/animate.css)
 
 ## Como usar
 #### Carregue o plugin e dependências
