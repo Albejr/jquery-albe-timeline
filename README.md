@@ -7,10 +7,11 @@ Este plugin é capaz de lidar com praticamente qualquer forma de conteúdo (incl
 
 ## Demostração
 ####HORIZONTAL
-[Template 1](http://timeline.albertino.eti.br/horizontal-template1 "Template Horizontal")
+[Template 1](http://timeline.albertino.eti.br/templates/horizontal/index.html "Template Horizontal")
 
 ####VERTICAL
-[Template 1](http://timeline.albertino.eti.br/vertical-template1 "Template Vertical")
+[Template 1](http://timeline.albertino.eti.br/templates/vertical/index.html "Template Vertical")
+[Template 2](http://timeline.albertino.eti.br/templates/vertical/index.html "Template Simples")
 
 ## Requisitos
 * Necessário
