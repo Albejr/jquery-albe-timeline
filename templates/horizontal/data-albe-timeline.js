@@ -70,13 +70,13 @@ $(document).ready(function () {
 
     //Call function with JSON OBJECT
     $("#myTimeline").albeTimeline(data, {
-        //effect: "zoomIn",
+        effect: "zoomIn",
         showMenu: false,
         //sortDesc: false,
-		//language: "en-us"
+	//language: "en-us"
     });
 	
-	//Call function with STRING
-    //$("#myTimeline").albeTimeline(str);
+   //Call function with STRING
+   //$("#myTimeline").albeTimeline(str);
 
 });
