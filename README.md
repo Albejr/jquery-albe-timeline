@@ -6,12 +6,11 @@ Os dados serão agrupados automaticamente pelo ano e a série de eventos ordenad
 Este plugin é capaz de lidar com praticamente qualquer forma de conteúdo (incluindo imagens, vídeo, áudio). 
 
 ## Demostração
-####HORIZONTAL
-[Template 1](http://timeline.albertino.eti.br/templates/horizontal/index.html "Template Horizontal")
-
-####VERTICAL
-[Template 1](http://timeline.albertino.eti.br/templates/vertical/index.html "Template Vertical")
-[Template 2](http://timeline.albertino.eti.br/templates/vertical/index.html "Template Simples")
+| HORIZONTAL  | VERTICAL |
+| ------------- | ------------- |
+| [Template 1](http://timeline.albertino.eti.br/templates/horizontal/index.html "Template Horizontal")  | [Template 1](http://timeline.albertino.eti.br/templates/vertical/index.html "Template Vertical")  |
+|   | [Template 2](http://timeline.albertino.eti.br/templates/vertical/index.html "Template Simples")
+  |
 
 ## Requisitos
 * Necessário
