@@ -12,7 +12,7 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
 | HORIZONTAL  | VERTICAL |
 | ------------- | ------------- |
 | [Template 1](http://timeline.albertino.eti.br/templates/horizontal/index.html "Template Horizontal")  | [Template 1](http://timeline.albertino.eti.br/templates/vertical/index.html "Template Vertical")  |
-|   | [Template 2](http://timeline.albertino.eti.br/templates/vertical/index.html "Template Simples")
+|   | [Template 2](http://timeline.albertino.eti.br/templates/simple/index.html "Template Simples")
   |
 
 ## Requisitos
