@@ -5,6 +5,9 @@ Os dados serão agrupados automaticamente pelo ano e a série de eventos ordenad
 
 Este plugin é capaz de lidar com praticamente qualquer forma de conteúdo (incluindo imagens, vídeo, áudio). 
 
+## Licença de uso
+O plugin é de código aberto e liberado para uso comercial sem custo. Peço somente que [me comunique] (http://albertino.eti.br "contato") caso implementá-lo em algum lugar, para que eu possa dar uma olhada ou adicioná-lo aqui como demostração.
+
 ## Demostração
 | HORIZONTAL  | VERTICAL |
 | ------------- | ------------- |
@@ -157,5 +160,3 @@ Usando os padrões do plugin, teremos um resultado parecido com isso:
     }
   }
 ```
-## Licença de uso
-O plugin é de código aberto e liberado para uso comercial sem custo. Peço somente que [me comunique] (http://albertino.eti.br "contato") caso implementá-lo em algum lugar, para que eu possa dar uma olhada ou adicioná-lo aqui como demostração.
