@@ -44,6 +44,14 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
             {
                tag: 'p',
                content: 'Lorem ipsum dolor sit amet, nisl lorem.'
+         }],
+         footer: 'Sample of footer'
+      },
+      {
+         time: '2016-01-20',
+         body: [{
+               tag: 'h2',
+               content: 'Sample with link'
             },
             {
                tag: 'a',
@@ -53,27 +61,7 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
                   target: '_blank',
                   title: 'Albertino Júnior'
                }
-            }],
-         footer: 'Sample of footer'
-      },
-      {
-         time: '2016-01-20',
-         body: [{
-               tag: 'img',
-               attr: {
-                  src: '../img/qrcode.png',
-                  width: '150px',
-                  cssclass: 'img-responsive'
-               }
-            },
-            {
-               tag: 'h2',
-               content: 'Sample with image'
-            },
-            {
-               tag: 'p',
-               content: 'Lorem ipsum dolor sit amet, nisl lorem.'
-            }]
+         }]
       }
    ];
 
