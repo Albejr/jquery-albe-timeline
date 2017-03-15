@@ -12,8 +12,8 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
 | HORIZONTAL  | VERTICAL |
 | ------------- | ------------- |
 | [Template 1](http://timeline.albertino.eti.br/templates/horizontal/index.html "Template Horizontal")  | [Template 1](http://timeline.albertino.eti.br/templates/vertical/index.html "Template Vertical")  |
-|   | [Template 2](http://timeline.albertino.eti.br/templates/simple/index.html "Template Simples")
-  |
+|   | [Template 2](http://timeline.albertino.eti.br/templates/simple/index.html "Template Simples")  |
+|   | [Template 3](http://timeline.albertino.eti.br/templates/audain/index.html "Template Audain Designs")  |
 
 ## Requisitos
 * Necessário
@@ -33,40 +33,49 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
 ```js
 <script type="text/javascript">
 
-  //Json Object
-  var data = [{
-          time: '2015-03-29',
-          header: 'Sample of header',
-          body: [{
-              tag: 'h1',
-              content: 'Lorem ipsum'
-          },
-          {
-              tag: 'p',
-              content: 'Lorem ipsum dolor sit amet, nisl lorem.'
-          }],
-          footer: 'Sample of footer'
-      },
-      {
-          time: '2016-01-20',
-          body: [{
-              tag: 'img',
-              attr: {
-                  src: '../img/qrcode.png',
-                  width: '150px',
-                  cssclass: 'img-responsive'
-              }
-          },
-          {
-              tag: 'h2',
-              content: 'Sample with image'
-          },
-          {
-              tag: 'p',
-              content: 'Lorem ipsum dolor sit amet, nisl lorem.'
-          }]
-      }
-  ];
+	//Json Object
+	var data = [{
+			time: '2015-03-29',
+			header: 'Sample of header',
+			body: [{
+					tag: 'h1',
+					content: 'Lorem ipsum'
+				},
+				{
+					tag: 'p',
+					content: 'Lorem ipsum dolor sit amet, nisl lorem.'
+				},
+				{
+					tag: 'a',
+					content: 'MY LINK',
+					attr: {
+						href: 'http://albertino.eti.br',
+						target: '_blank',
+						title: 'Albertino Júnior'
+					}
+				}],
+			footer: 'Sample of footer'
+		},
+		{
+			time: '2016-01-20',
+			body: [{
+					tag: 'img',
+					attr: {
+						src: '../img/qrcode.png',
+						width: '150px',
+						cssclass: 'img-responsive'
+					}
+				},
+				{
+					tag: 'h2',
+					content: 'Sample with image'
+				},
+				{
+					tag: 'p',
+					content: 'Lorem ipsum dolor sit amet, nisl lorem.'
+				}]
+		}
+	];
 
 </script>
 ```
@@ -96,7 +105,13 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
     //Define a exibição de um menu com ancora para os agrupamentos de anos
     language: "pt-br",
     //Especifica a linguagem de exibição dos textos
-    //"pt-br" ou "en-us"
+    //"pt-br", "en-us", "es-es"
+	formatDate : 1,
+	//Define o formato de exibição da data
+	//1:"dd MMMM"
+	//2:"dd/MM/aaaaa"
+	//3:"dd de MMMM de aaaaa"
+	//4:"DD, dd de MMMM de aaaaa"
     sortDesc: true,
     //Especifica se os dados serão ordenados pela data ou exibidos exatamente como estão
   });

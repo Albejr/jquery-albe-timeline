@@ -1,6 +1,0 @@
-* text=auto
-
-*.rb linguist-language=css
-*.rb linguist-language=html
-*.rb linguist-language=js
-*.rb linguist-language=json

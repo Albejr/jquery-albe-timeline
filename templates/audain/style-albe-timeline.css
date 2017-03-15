@@ -1,0 +1,71 @@
+/*
+    Credits: http://audaindesigns.com/demo/discovery/HTML/index.html
+    ---------------------------------------------------------------------
+
+    .timeline-container =   #timeline
+    .group-item         =   article
+    .group-middle       =   .panel:before
+    .group-desc         =   .panel-body
+    .group-right        =   .inverted
+    .group-date         =   .badge
+    .oldest             =   article:nth-last-child(2) > div.panel:before
+*/
+
+body { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1em; color: #333; background-color: #EFEFEF; margin: 0; }
+h2,
+h3,
+h4,
+h5 { margin-top: 5px; margin-bottom: 5px; line-height: 1; }
+
+ul#timeline-menu { height: 50px; text-align: center; }
+    ul#timeline-menu li { position: relative; float: left; list-style: none; margin: 0px; padding: 0px; }
+        ul#timeline-menu li a { display: block; text-decoration: none; font-size: 16px; padding: 10px; padding-top: 20px; color: black; font-weight: bold; border-bottom: 5px solid transparent; }
+            ul#timeline-menu li a:hover { color: #09F; border-bottom: 5px solid #09F; font-weight: normal; }
+
+section#timeline { position: relative; padding-bottom: 24px; overflow: hidden; }
+    section#timeline:before { position: absolute; content: ""; left: 49.95%; height: 100%; z-index: -1; width: 2px; background: #333; }
+
+    section#timeline div[class*="group"] { text-align: center; font-weight: bold; color: #09F; font-size: 1.2em; letter-spacing: 5px; margin: 25px 0px 25px 4px; }
+
+    section#timeline > article { position: relative; margin-bottom: 20px; }
+
+        section#timeline > article > div.panel { display: inline-block; background-color: transparent; margin-bottom: 0; border: none; border-radius: 0; -webkit-box-shadow: none; box-shadow: none; }
+            section#timeline > article > div.panel:before { content: ' '; width: 20px; height: 20px; background: #F7F7F7; display: block; position: absolute; margin: 0 auto; left: 0; right: 0; top: 38px; border: 2px solid #09F; border-radius: 50%; }
+            section#timeline > article > div.panel div.panel-body { text-align: right; border-right: 2px solid #09F; float: left; width: 45%; padding: 10px 25px 10px 25px; position: relative; color: #333; }
+                section#timeline > article > div.panel div.panel-body h3.group-title { text-transform: uppercase; letter-spacing: 2px; font-size: 20px; margin-bottom: 5px; }
+                section#timeline > article > div.panel div.panel-body span.group-sub-title { font-weight: 100; text-transform: uppercase; letter-spacing: 3px; }
+                section#timeline > article > div.panel div.panel-body p { padding-top: 15px; font-weight: 100; }
+
+            section#timeline > article > div.panel div.badge { display: inline-block; padding: 8px 16px !important; float: right; right: 36%; top: 30px; color: #333 !important; border-left: 2px solid #09F; position: relative; text-transform: uppercase; background-color: transparent; border-radius: 0; font-weight: normal; }
+
+        section#timeline > article.inverted > div.panel .panel-body { text-align: left; border-right: none; border-left: 2px solid #09F; float: right; color: #151d2a; }
+        section#timeline > article.inverted > div.panel div.badge { float: left; left: 36%; border-right: 2px solid #09F; border-left: none; }
+
+        section#timeline > article:hover > div.panel:before { background: #09F; border: 2px solid #FFF; }
+        section#timeline > article:hover > div.panel div.badge,
+        section#timeline > article:hover > div.panel div.panel-body h3.group-title { color: #09F !important; border-color: #09F !important; }
+
+        section#timeline > article:nth-last-child(2) > div.panel { width: 100%; }
+            /*section#timeline > article:nth-last-child(2) > div.panel:before { content: 'OLDEST'; text-align: center; text-transform: uppercase; font-size: 14px; color: #333; background: #F7F7F7; font-weight: 500; letter-spacing: 3px; margin: 0 auto; border-radius: 0px; padding: 5px 10px 7px 10px; border: none; border-top: 2px solid #09F; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; width: 100px; height: 30px; }*/
+            section#timeline > article:nth-last-child(2) > div.panel:before { background: #09F; position: absolute; bottom: 10px; }
+        section#timeline > article:nth-last-child(2):hover > div.panel:before { border: none; }
+        section#timeline > article > div.panel div.badge:last-child { display: none; }
+
+@media (max-width: 767px) {
+    section#timeline > article > div.panel div.badge,
+    section#timeline > article > div.panel div.panel-body { background: #F7F7F7; }
+    section#timeline > article > div.panel div.panel-body,
+    section#timeline > article.inverted > div.panel .panel-body { border-left: none; border-right: none; }
+    section#timeline > article > div.panel div.panel-body { text-align: center; float: none; width: 100%; border-top: 2px solid #09F; top: 20px; margin-bottom: 30px; border-radius: 0; }
+
+    section#timeline > article > div.panel div.badge,
+    section#timeline > article.inverted > div.panel div.badge { text-align: center; display: block; float: none; position: static; border: none; border-bottom: 2px solid #09F; border-radius: 0; }
+
+    section#timeline > article > div.panel:before { display: none; }
+    section#timeline > article:nth-last-child(2) > div.panel:before { display: block; }
+}
+
+@media (max-width: 991px) {
+    /*section#timeline > article > div.panel div.badge { right: 31%; }
+    section#timeline > article.inverted > div.panel div.badge { left: 33%; }*/
+}
