@@ -26,7 +26,7 @@ jQuery.fn.albeTimeline = function (json, options) {
         showMenu: true,
         language: "pt-br",
 		formatDate : 1,
-        sortDesc: true,
+        sortDesc: true, 
     }, options);
 
     var idioma = languages[0][settings.language];
@@ -133,7 +133,8 @@ jQuery.fn.albeTimeline = function (json, options) {
     }
 
     eTimeline.appendTo(_this);
-
+	
+	console.log(JSON.stringify(json));
     //return this;
 };
 

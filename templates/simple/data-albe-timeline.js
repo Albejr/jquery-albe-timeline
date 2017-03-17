@@ -54,7 +54,7 @@ $(document).ready(function () {
     $("#myTimeline").albeTimeline(data, {
         //effect: "zoomIn",
         showMenu: true,
-        //sortDesc: false,
+        sortDesc: true,
         //language: "en-us"
     });
 

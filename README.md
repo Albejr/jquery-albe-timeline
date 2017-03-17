@@ -148,6 +148,8 @@ Usando os padrões do plugin, teremos um resultado parecido com isso:
 
   var data = '[{"time": "2016-01-20", "body": [{ "tag": "h1", "content": "Lorem ipsum" }, { "tag": "p", "content": "massa, cursus quisque leo quisque dui." }]}]';
 
+* Você pode acessar o console de depuração do navegador para verificar o json ordenado.
+  
 * O elemento **time** deve atender ao padrão ISO 8601 sempre no formato ano-mês-dia 
 
   "yyyy-mm-dd"
