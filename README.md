@@ -1,9 +1,10 @@
 # Albe Timeline
-Crie uma linha do tempo a partir de uma lista de dados em JSON, altamente personalizável apenas com CSS e HTML.
 
-Os dados serão agrupados automaticamente pelo ano e a série de eventos ordenada pela data conforme parametro.
+Plugin jQuery para timeline, simples, mas altamente personalizável. Vai ajudar você a renderizar uma linha de tempo responsiva (CSS e HTML) a partir de dados JSON. 
 
-Este plugin é capaz de lidar com praticamente qualquer forma de conteúdo (incluindo imagens, vídeo, áudio). 
+Os dados serão automaticamente agrupados por ano e a série de eventos serão classificados por data. 
+
+Além disso, este plugin é capaz de lidar com praticamente qualquer tipo de conteúdo, tais como imagens, vídeos, áudios e muito mais.
 
 ## Licença de uso
 O plugin é de código aberto e liberado para uso comercial sem custo. Peço somente que [me comunique] (http://albertino.eti.br "contato") caso implementá-lo em algum lugar, para que eu possa dar uma olhada ou adicioná-lo aqui como demostração.
