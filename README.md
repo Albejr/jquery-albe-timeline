@@ -148,8 +148,9 @@ Usando os padrões do plugin, teremos um resultado parecido com isso:
 ```
 ## Notas
 * O objeto Json também é aceito no formato de string. Por exemplo:
-
-  var data = '[{"time": "2016-01-20", "body": [{ "tag": "h1", "content": "Lorem ipsum" }, { "tag": "p", "content": "massa, cursus quisque leo quisque dui." }]}]';
+```js
+$('#myTimeline').albeTimeline('[{"time": "2016-01-20", "body": [{ "tag": "h1", "content": "Lorem ipsum" }, { "tag": "p", "content": "massa, cursus quisque leo quisque dui." }]}]');
+```
 
 * Você pode acessar o console de depuração do navegador para verificar o json ordenado.
   
