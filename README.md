@@ -74,6 +74,9 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
 ```js
 <script type="text/javascript">
 
+  //Json Object
+  var data = [{...}];
+   
   $(document).ready(function () {
       $('#myTimeline').albeTimeline(data);
   });
