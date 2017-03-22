@@ -2,7 +2,7 @@
 
 Plugin jQuery para timeline, simples, mas altamente personalizável. Vai ajudar você a renderizar uma linha de tempo responsiva (CSS e HTML) a partir de dados JSON. 
 
-Os dados serão automaticamente agrupados por ano e a série de eventos serão classificados por data. 
+As informações serão automaticamente agrupadas por ano e a série de eventos serão classificados por data. 
 
 Além disso, este plugin é capaz de lidar com praticamente qualquer tipo de conteúdo, tais como imagens, vídeos, áudios e muito mais.
 
