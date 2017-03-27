@@ -34,7 +34,7 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
 ```js
 <script type="text/javascript">
 
-   //Json Object
+   //Objeto Json
    var data = [{
          time: '2015-03-29',
          header: 'Sample of header',
@@ -75,7 +75,7 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
 ```js
 <script type="text/javascript">
 
-  //Json Object
+  //Objeto Json
   var data = [{...}];
    
   $(document).ready(function () {
@@ -107,32 +107,32 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
     sortDesc: true,
   });
 ```
-* Defina a cultura:
+* Especifique a cultura:
 ```js
 $(document).ready(function () {
-	
-	//Sobrescreve a CutureInfo padrão do plugin
-	$.fn.albeTimeline.languages = [{
-		"en-US": {
-			days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-			months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-			shortMonths: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-			msgEmptyContent: "No information to display."
-		},
-		"es-ES": {
-			days: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
-			months: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
-			shortMonths: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
-			msgEmptyContent: "No hay información para mostrar."
-		},
-		"fr-FR": {
-			days: ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"],
-			months: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
-			shortMonths: ["Jan","Fév","Mar","Avr","Mai","Juin", "Juil","Août","Sep","Oct","Nov","Déc"],
-			msgEmptyContent: "Aucune information à afficher."
-		}
-	}];
-	
+    
+    //Sobrescreve a CutureInfo padrão do plugin
+    $.fn.albeTimeline.languages = [{
+        "en-US": {
+            days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+            shortMonths: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+            msgEmptyContent: "No information to display."
+        },
+        "es-ES": {
+            days: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
+            months: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+            shortMonths: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+            msgEmptyContent: "No hay información para mostrar."
+        },
+        "fr-FR": {
+            days: ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"],
+            months: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
+            shortMonths: ["Jan","Fév","Mar","Avr","Mai","Juin", "Juil","Août","Sep","Oct","Nov","Déc"],
+            msgEmptyContent: "Aucune information à afficher."
+        }
+    }];
+    
     //Chama a função passando o OBJETO JSON
     $("#myTimeline").albeTimeline(data, {
         language: "fr-FR",  //Default: pt-BR
