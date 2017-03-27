@@ -28,7 +28,7 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
 <link rel="stylesheet" href="style-albe-timeline.css" />
 
 <script src="https://cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
-<script src="jquery-albe-timeline-1.1.2.min.js"></script>
+<script src="jquery-albe-timeline-2.0.0.min.js"></script>
 ```
 #### Crie a lista de dados
 ```js
@@ -95,9 +95,8 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
     effect: "fadeInUp",
     //Define a exibição de um menu com ancora para os agrupamentos de anos
     showMenu: true,
-    //Especifica a linguagem de exibição dos textos
-    //"pt-br", "en-us", "es-es"
-    language: "pt-br",
+    //Especifica a linguagem de exibição dos textos (i18n)
+    language: "pt-BR",
     //Define o formato de exibição da data
     //1:"dd MMMM"
     //2:"dd/MM/aaaaa"
@@ -112,7 +111,7 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
 ```js
 $(document).ready(function () {
 	
-	//override plugin default CutureInfo
+	//Sobrescreve a CutureInfo padrão do plugin
 	$.fn.albeTimeline.languages = [{
 		"en-US": {
 			days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
@@ -134,7 +133,7 @@ $(document).ready(function () {
 		}
 	}];
 	
-    //Call function with JSON OBJECT
+    //Chama a função passando o OBJETO JSON
     $("#myTimeline").albeTimeline(data, {
         language: "fr-FR",  //Default: pt-BR
     });
