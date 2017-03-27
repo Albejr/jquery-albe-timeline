@@ -90,23 +90,56 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
   //**data**, define o objeto Json contendo a lista de dados a serem exibidos.
   
   $("#myTimeline").albeTimeline(data, {
-    effect: "fadeInUp",
     //Efeito de apresentação dos itens
     //"fadeInUp", "bounceIn", "fadeInUp", etc
-    showMenu: true,
+    effect: "fadeInUp",
     //Define a exibição de um menu com ancora para os agrupamentos de anos
-    language: "pt-br",
+    showMenu: true,
     //Especifica a linguagem de exibição dos textos
     //"pt-br", "en-us", "es-es"
-    formatDate : 1,
+    language: "pt-br",
     //Define o formato de exibição da data
     //1:"dd MMMM"
     //2:"dd/MM/aaaaa"
     //3:"dd de MMMM de aaaaa"
     //4:"DD, dd de MMMM de aaaaa"
-    sortDesc: true,
+    formatDate : 1,
     //Especifica se os dados serão ordenados pela data ou exibidos exatamente como estão
+    sortDesc: true,
   });
+```
+* Defina a cultura:
+```js
+$(document).ready(function () {
+	
+	//override plugin default CutureInfo
+	$.fn.albeTimeline.languages = [{
+		"en-US": {
+			days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+			months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+			shortMonths: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+			msgEmptyContent: "No information to display."
+		},
+		"es-ES": {
+			days: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
+			months: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+			shortMonths: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+			msgEmptyContent: "No hay información para mostrar."
+		},
+		"fr-FR": {
+			days: ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"],
+			months: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
+			shortMonths: ["Jan","Fév","Mar","Avr","Mai","Juin", "Juil","Août","Sep","Oct","Nov","Déc"],
+			msgEmptyContent: "Aucune information à afficher."
+		}
+	}];
+	
+    //Call function with JSON OBJECT
+    $("#myTimeline").albeTimeline(data, {
+        language: "fr-FR",  //Default: pt-BR
+    });
+
+});
 ```
 #### Estrutura Html
 Usando os padrões do plugin, teremos um resultado parecido com isso:
