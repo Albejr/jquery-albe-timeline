@@ -133,7 +133,7 @@ $(document).ready(function () {
         }
     }];
     
-    //Chama a função passando o OBJETO JSON
+    //Internationalization
     $("#myTimeline").albeTimeline(data, {
         language: "fr-FR",  //Default: pt-BR
     });
