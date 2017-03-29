@@ -112,7 +112,7 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
 $(document).ready(function () {
     
     //Sobrescreve a CutureInfo padrão do plugin
-    $.fn.albeTimeline.languages = [{
+    $.fn.albeTimeline.languages = {
         "en-US": {
             days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
             months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
@@ -128,14 +128,15 @@ $(document).ready(function () {
         "fr-FR": {
             days: ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"],
             months: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
-            shortMonths: ["Jan","Fév","Mar","Avr","Mai","Juin", "Juil","Août","Sep","Oct","Nov","Déc"],
+            shortMonths: ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Août", "Sep", "Oct", "Nov", "Déc"],
             msgEmptyContent: "Aucune information à afficher."
         }
-    }];
-    
+    };
+
     //Internationalization
     $("#myTimeline").albeTimeline(data, {
-        language: "fr-FR",  //Default: pt-BR
+        language: "fr-FR",	//default: pt-BR
+        formatDate: 4		//default: 1
     });
 
 });
@@ -184,8 +185,6 @@ Usando os padrões do plugin, teremos um resultado parecido com isso:
 ```js
 $('#myTimeline').albeTimeline('[{"time": "2016-01-20", "body": [{ "tag": "h1", "content": "Lorem ipsum" }, { "tag": "p", "content": "massa, cursus quisque leo quisque dui." }]}]');
 ```
-
-* Você pode acessar o console de depuração do navegador para verificar o json ordenado.
   
 * O elemento **time** deve atender ao padrão ISO 8601 sempre no formato ano-mês-dia 
 

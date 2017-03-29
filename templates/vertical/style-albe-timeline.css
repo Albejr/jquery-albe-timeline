@@ -2,12 +2,12 @@ body { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px
 h2,
 h3,
 h4,
-h5 { margin-top: 5px; margin-bottom: 5px; line-height: 1;}
+h5 { margin-top: 5px; margin-bottom: 5px; line-height: 1; }
 
-ul#timeline-menu { height:50px; text-align:center; }
+ul#timeline-menu { height: 50px; text-align: center; }
     ul#timeline-menu li { position: relative; float: left; list-style: none; margin: 0px; padding: 0px; }
-        ul#timeline-menu li a { display: block; text-decoration: none; font-size: 16px; padding: 10px; padding-top: 20px; color: black; font-weight:bold; border-bottom: 5px solid transparent; }
-            ul#timeline-menu li a:hover { color: #EF693A; border-bottom: 5px solid #EF693A; font-weight:normal;}
+        ul#timeline-menu li a { display: block; text-decoration: none; font-size: 16px; padding: 10px; padding-top: 20px; color: black; font-weight: bold; border-bottom: 5px solid transparent; }
+            ul#timeline-menu li a:hover { color: #EF693A; border-bottom: 5px solid #EF693A; font-weight: normal; }
 
 section#timeline { width: 90%; margin: 20px auto; padding-bottom: 20px; position: relative; }
     section#timeline:before { top: 0; bottom: 0; position: absolute; content: " "; width: 2px; background-color: #EF693A; left: 50%; height: 100%; margin-left: -1.5px; }

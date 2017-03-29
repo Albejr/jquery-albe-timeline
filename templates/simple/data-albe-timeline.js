@@ -1,64 +1,74 @@
 //Json Object
-var data = [{
-    time: '2015-03-29',
-    body: [{
-        tag: 'h1',
-        content: "Lorem ipsum"
-    },
-    {
-        tag: 'p',
-        content: 'Lorem ipsum dolor sit amet, nisl lorem, wisi egestas orci tempus class massa, suscipit eu elit urna in urna, gravida wisi aenean eros massa, cursus quisque leo quisque dui.'
-    }]
-},
-    {
-        time: '2015-04-15',
-        body: [{
-            tag: 'h1',
-            content: "Lorem ipsum"
-        },
-        {
-            tag: 'p',
-            content: 'Lorem ipsum dolor sit amet, nisl lorem, wisi egestas orci tempus class massa, suscipit eu elit urna in urna, gravida wisi aenean eros massa, cursus quisque leo quisque dui.'
-        }]
-    },
-    {
-        time: '2016-01-20',
-        body: [{
-            tag: 'h1',
-            content: "Lorem ipsum"
-        },
-        {
-            tag: 'p',
-            content: 'Lorem ipsum dolor sit amet, nisl lorem, wisi egestas orci tempus class massa, suscipit eu elit urna in urna, gravida wisi aenean eros massa, cursus quisque leo quisque dui.'
-        }]
-    },
-    {
-        time: '2013-01-20',
-        body: [{
-            tag: 'h1',
-            content: "Lorem ipsum"
-        },
-        {
-            tag: 'p',
-            content: 'Lorem ipsum dolor sit amet, nisl lorem, wisi egestas orci tempus class massa, suscipit eu elit urna in urna, gravida wisi aenean eros massa, cursus quisque leo quisque dui.'
-        }]
-    }
+var data = [
+	{
+		time: '2015-03-29',
+		body: [{
+			tag: 'h1',
+			content: "Lorem ipsum"
+		},
+		{
+			tag: 'p',
+			content: 'Lorem ipsum dolor sit amet, nisl lorem, wisi egestas orci tempus class massa, suscipit eu elit urna in urna, gravida wisi aenean eros massa, cursus quisque leo quisque dui.'
+		}]
+	},
+	{
+		time: '2015-04-15',
+		body: [{
+			tag: 'h1',
+			content: "Lorem ipsum"
+		},
+		{
+			tag: 'p',
+			content: 'Lorem ipsum dolor sit amet, nisl lorem, wisi egestas orci tempus class massa, suscipit eu elit urna in urna, gravida wisi aenean eros massa, cursus quisque leo quisque dui.'
+		}]
+	},
+	{
+		time: '2016-01-20',
+		body: [{
+			tag: 'h1',
+			content: "Lorem ipsum"
+		},
+		{
+			tag: 'p',
+			content: 'Lorem ipsum dolor sit amet, nisl lorem, wisi egestas orci tempus class massa, suscipit eu elit urna in urna, gravida wisi aenean eros massa, cursus quisque leo quisque dui.'
+		}]
+	},
+	{
+		time: '2013-01-20',
+		body: [{
+			tag: 'h1',
+			content: "Lorem ipsum"
+		},
+		{
+			tag: 'p',
+			content: 'Lorem ipsum dolor sit amet, nisl lorem, wisi egestas orci tempus class massa, suscipit eu elit urna in urna, gravida wisi aenean eros massa, cursus quisque leo quisque dui.'
+		}]
+	}
 ];
 
-//Json String
-var str = '[{"time": "2015-03-29", "header": "Sample of header", "body": [{ "tag": "h1", "content": "Lorem ipsum" }, { "tag": "p", "content": "massa, cursus quisque leo quisque dui." }], "footer": "Sample of footer"}]';
+$.fn.albeTimeline.languages = {
+	"es-ES": {
+		days: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
+		months: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+		shortMonths: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+		msgEmptyContent: "No hay información para mostrar."
+	},
+	"en-US": {
+		days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+		months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+		shortMonths: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+		msgEmptyContent: "No information to display."
+	},
+	"fr-FR": {
+		days: ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"],
+		months: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
+		shortMonths: ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Août", "Sep", "Oct", "Nov", "Déc"],
+		msgEmptyContent: "Aucune information à afficher."
+	}
+};
 
-$(document).ready(function () {
-
-    //Call function with JSON OBJECT
-    $("#myTimeline").albeTimeline(data, {
-        //effect: "zoomIn",
-        showMenu: true,
-        sortDesc: true,
-        //language: "en-us"
-    });
-
-    //Call function with STRING
-    //$("#myTimeline").albeTimeline(str);
-
+//Internationalization
+$("#myTimeline").albeTimeline(data, {
+	language: "fr-FR",  //default: pt-BR
+	formatDate: 4		//default: 1
 });

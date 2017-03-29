@@ -3,7 +3,7 @@ body { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px
 h2,
 h3,
 h4,
-h5 { margin-top: 5px; margin-bottom: 5px; line-height: 1;}
+h5 { margin-top: 5px; margin-bottom: 5px; line-height: 1; }
 
 section#timeline { list-style: none; position: relative; margin: 20px; padding-top: 50px; display: inline-block; }
     section#timeline:before { height: 2px; top: auto; bottom: 25px; left: 0; right: 0; position: absolute; content: " "; margin-left: -1.5px; position: absolute; content: " "; background-color: #EF693A; margin-left: -1.5px; }
@@ -25,5 +25,5 @@ section#timeline { list-style: none; position: relative; margin: 20px; padding-t
     section#timeline div[class*="group"] { width: 40px; min-width: 40px; max-width: 40px; padding: 0px; border-bottom: 5px solid #EF693A; font-weight: bold; text-align: center; }
 
     section#timeline article:nth-last-child(2) { width: 40px; min-width: 40px; max-width: 40px; }
-        section#timeline article:nth-last-child(2) div.panel:after { display:none; }
+        section#timeline article:nth-last-child(2) div.panel:after { display: none; }
         section#timeline article:nth-last-child(2) div.panel div.badge { background-color: #EF693A; width: 20px; height: 20px; margin: 0 0 5px 5px; }
