@@ -94,7 +94,7 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
     //Efeito de apresentação dos itens
     //"fadeInUp", "bounceIn", "fadeInUp", etc
     effect: "fadeInUp",
-	//Define a visibilidade do agrupador anual
+    //Define a visibilidade do agrupador anual
     showGroup: true,
     //Define a visibilidade do menu com ancora para os agrupamentos anuais (depende de 'showGroup')
     showMenu: true,
