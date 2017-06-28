@@ -1,7 +1,8 @@
-﻿(function ($) {
+(function ($) {
 	$.fn.albeTimeline = function (json, options) {
 
 		var _this = this;
+        _this.html('');
 
 		//Mescla opções do usuário com o padrão
 		var settings = $.extend({}, $.fn.albeTimeline.defaults, options);
@@ -37,12 +38,13 @@
 		$.each(json, function (index, element) {
 
 			var ano = new Date(element.time).getFullYear();
-			var separador = $(eTimeline).find("div.group" + ano);
+			var agrupador = $(eTimeline).find("div.group" + ano);
 
-			//Se o separador não existe, cria.
-			if (separador.length === 0) {
-				separador = $("<div>").attr("id", ("year" + ano)).addClass("group" + ano).text(ano);
-				$(eTimeline).append(separador);
+			//Se o agrupador não existe, cria.
+			if (agrupador.length === 0) {
+				agrupador = $("<div>").attr("id", ("year" + ano)).addClass("group" + ano).text(ano);
+				
+				$(eTimeline).append(agrupador);
 
 				var anchor = $('<a>').attr("href", ("#year" + ano)).text(ano);
 				eMenu.append($("<li>").append(anchor));
@@ -91,8 +93,8 @@
 			}
 
 			var slot = $("<article>").append(ePanel);
-			//Adiciona o item logo após ao respectivo separador.
-			slot.insertAfter(separador);
+			//Adiciona o item logo após ao respectivo agrupador.
+			slot.insertAfter(agrupador);
 
 			/****************************************FIM - SLOT****************************************/
 		});
@@ -110,10 +112,20 @@
 			if (settings.effect && settings.effect != 'none')
 				$(this).addClass("animated " + settings.effect);
 		});
-
-		//Exibe o menu
-		if (settings.showMenu) {
-			eMenu.appendTo(_this);
+		
+		
+		//A exibição do menu depende da definição de visibilidade do agrupador.
+		if (settings.showGroup)
+		{
+			if (settings.showMenu) {
+				eMenu.appendTo(_this);
+			}			
+		}
+		else
+		{
+			$.each(eTimeline.find('div[class*="group"]'), function (index, value) {
+				$(this).css("display","none");
+			});
 		}
 
 		eTimeline.appendTo(_this);
@@ -123,9 +135,10 @@
 	$.fn.albeTimeline.languages = {};
 	$.fn.albeTimeline.defaults = {
 		effect: "fadeInUp",
-		showMenu: true,
-		language: "pt-BR",
 		formatDate: 1,
+		language: "pt-BR",
+        showGroup: true,
+		showMenu: true,
 		sortDesc: true,
 	};
 

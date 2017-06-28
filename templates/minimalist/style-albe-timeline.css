@@ -1,0 +1,15 @@
+body { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1em; color: #333; background-color: #EFEFEF; margin: 0; }
+h2,
+h3,
+h4,
+h5 { margin-top: 5px; margin-bottom: 5px; line-height: 1; }
+
+section#timeline { font-size: 12px; text-align: justify; margin: 5px 0px; padding: 0px; position: relative; width: 320px; margin: 50px; }
+    section#timeline:before { height: 95%; position: absolute; left: 0; top: 0; content: ''; width: 1px; background-color: rgba(24,188,156,0.2); }
+    section#timeline > article > div.panel { background-color: transparent; border: none; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; position: relative; margin-bottom: 15px; }
+        section#timeline > article > div.panel .panel-body { padding: 10px 15px; }
+    section#timeline:last-child div[class="clearfix"] { display: none; }
+    section#timeline article div.panel div.badge { padding: 0 0 0 15px; background-color: transparent; color: #333; }
+        section#timeline article div.panel div.badge::before { content: ''; width: 13px; height: 13px; background-color: #FFF; border-radius: 50%; border: 1px solid #18BC9C; position: absolute; left: -7px; top: 0px; }
+        section#timeline article div.panel div.badge:last-child { display: none; }
+		/*section#timeline article div.panel div.badge:last-child::before { content: '...'; border: none; background-color: transparent; }*/

@@ -28,7 +28,7 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
 <link rel="stylesheet" href="style-albe-timeline.css" />
 
 <script src="https://cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
-<script src="jquery-albe-timeline-2.0.1.min.js"></script>
+<script src="jquery-albe-timeline-2.0.2.min.js"></script>
 ```
 #### Crie a lista de dados
 ```js
@@ -93,7 +93,9 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
     //Efeito de apresentação dos itens
     //"fadeInUp", "bounceIn", "fadeInUp", etc
     effect: "fadeInUp",
-    //Define a exibição de um menu com ancora para os agrupamentos de anos
+	//Define a visibilidade do agrupador anual
+    showGroup: true,
+    //Define a visibilidade do menu com ancora para os agrupamentos anuais (depende de 'showGroup')
     showMenu: true,
     //Especifica a linguagem de exibição dos textos (i18n)
     language: "pt-BR",
