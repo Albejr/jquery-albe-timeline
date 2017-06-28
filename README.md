@@ -14,7 +14,8 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
 | ------------- | ------------- |
 | [Template 1](http://timeline.albertino.eti.br/templates/horizontal/index.html "Template Horizontal")  | [Template 1](http://timeline.albertino.eti.br/templates/vertical/index.html "Template Vertical")  |
 |   | [Template 2](http://timeline.albertino.eti.br/templates/simple/index.html "Template Simples")  |
-|   | [Template 3](http://timeline.albertino.eti.br/templates/audain/index.html "Template Audain Designs")  |
+|   | [Template 3](http://timeline.albertino.eti.br/templates/minimalist/index.html "Template Minimalista")  |
+|   | [Template 4](http://timeline.albertino.eti.br/templates/audain/index.html "Template Audain Designs")  |
 
 ## Requisitos
 * Necessário
