@@ -2,7 +2,7 @@
 	$.fn.albeTimeline = function (json, options) {
 
 		var _this = this;
-        _this.html('');
+		_this.html('');
 
 		//Mescla opções do usuário com o padrão
 		var settings = $.extend({}, $.fn.albeTimeline.defaults, options);
@@ -42,15 +42,15 @@
 
 			//Se o agrupador não existe, cria.
 			if (agrupador.length === 0) {
-				agrupador = $("<div>").attr("id", ("year" + ano)).addClass("group" + ano).text(ano);
-				
+				agrupador = $("<div>").attr("id", ("y" + ano)).addClass("group" + ano).text(ano);
+
 				$(eTimeline).append(agrupador);
 
-				var anchor = $('<a>').attr("href", ("#year" + ano)).text(ano);
+				var anchor = $('<a>').attr("href", ("#y" + ano)).text(ano);
 				eMenu.append($("<li>").append(anchor));
 			}
 
-			/****************************************SLOT****************************************/
+			/****************************************SLOT <article>****************************************/
 			var badge = $('<div>').addClass("badge");
 			badge.text(fnDateFormat(element.time, settings.formatDate, idioma));
 
@@ -92,11 +92,15 @@
 				ePanel.append(ePanelFooter);
 			}
 
-			var slot = $("<article>").append(ePanel);
-			//Adiciona o item logo após ao respectivo agrupador.
-			slot.insertAfter(agrupador);
+			//Adiciona o item ao respectivo agrupador.
+			var irmaos = agrupador.siblings('article[id^="a' + ano + '"]');
+			var slot = $('<article id="a' + ano + '-' + (irmaos.length + 1) + '">').append(ePanel);
 
-			/****************************************FIM - SLOT****************************************/
+			if (irmaos.length > 0)
+				slot.insertAfter(irmaos.last());
+			else
+				slot.insertAfter(agrupador);
+			/****************************************FIM - SLOT <article> ****************************************/
 		});
 
 		//Marcador inicial da Timeline 
@@ -112,19 +116,17 @@
 			if (settings.effect && settings.effect != 'none')
 				$(this).addClass("animated " + settings.effect);
 		});
-		
-		
+
+
 		//A exibição do menu depende da definição de visibilidade do agrupador.
-		if (settings.showGroup)
-		{
+		if (settings.showGroup) {
 			if (settings.showMenu) {
 				eMenu.appendTo(_this);
-			}			
+			}
 		}
-		else
-		{
+		else {
 			$.each(eTimeline.find('div[class*="group"]'), function (index, value) {
-				$(this).css("display","none");
+				$(this).css("display", "none");
 			});
 		}
 
@@ -137,7 +139,7 @@
 		effect: "fadeInUp",
 		formatDate: 1,
 		language: "pt-BR",
-        showGroup: true,
+		showGroup: true,
 		showMenu: true,
 		sortDesc: true,
 	};
