@@ -80,7 +80,7 @@
 
 				//Conteúdo do elemento
 				if (value2.content)
-					e.text(value2.content);
+					e.html(value2.content);
 
 				ePanelBody.append(e);
 			});
@@ -88,7 +88,7 @@
 			ePanel.append(ePanelBody);
 
 			if (element.footer) {
-				var ePanelFooter = $("<div>").addClass("panel-footer").text(element.footer);
+				var ePanelFooter = $("<div>").addClass("panel-footer").html(element.footer);
 				ePanel.append(ePanelFooter);
 			}
 

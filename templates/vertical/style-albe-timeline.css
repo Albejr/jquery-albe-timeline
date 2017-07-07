@@ -31,3 +31,6 @@ section#timeline { width: 90%; margin: 20px auto; padding-bottom: 20px; position
     section#timeline div[class*="group"] { width: 65px; font-size: 1.3em; margin: 35px auto; padding: 5px; border-radius: 0px; background: #EF693A; color: #FFF; }
     section#timeline article div.panel div.badge { position: absolute; top: 0; left: 50%; margin: 0 0 0 -15px; border-radius: 50%; font-size: 0.75em; width: 30px; height: 30px; background: #FFF; color: #EF693A; }
         section#timeline article div.panel div.badge:last-child { background-color: #EF693A; width: 20px; height: 20px; margin: 0 0 0 -10px; }
+
+	a.mylink { color: #EF693A; font-weight: bold; }
+	a.mylink:hover { color: #DA3203; }

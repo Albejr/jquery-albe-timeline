@@ -29,7 +29,7 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
 <link rel="stylesheet" href="style-albe-timeline.css" />
 
 <script src="https://cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
-<script src="jquery-albe-timeline-2.1.0.min.js"></script>
+<script src="jquery-albe-timeline-2.1.1.min.js"></script>
 ```
 #### Crie a lista de dados
 ```js
