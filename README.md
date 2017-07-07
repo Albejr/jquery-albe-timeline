@@ -204,3 +204,12 @@ $('#myTimeline').albeTimeline('[{"time": "2016-01-20", "body": [{ "tag": "h1", "
     }
   }
 ```
+
+* Para aspas duplas em atributos, use "escape". Por exemplo:
+```js
+  body: [{
+			tag: 'p',
+			content: 'Lorem ipsum dolor sit amet, nisl lorem. See <a href=\"https://github.com/Albejr/jquery-albe-timeline\" target=\"_blank\">more details</a>'
+		}
+  }
+```
