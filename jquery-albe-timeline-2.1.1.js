@@ -1,3 +1,11 @@
+/*!
+ * Albe-Timeline v2.1.1, https://github.com/Albejr/jquery-albe-timeline
+ * ======================================================================
+ * Plugin para renderização de 'linha do tempo' a partir de listas de dados em JSON
+ *
+ * (c) 2017 Albertino Júnior, http://albertino.eti.br
+ * MIT Licensed
+ */
 (function ($) {
 	$.fn.albeTimeline = function (json, options) {
 
