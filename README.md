@@ -1,4 +1,4 @@
-# Albe Timeline <sup>2.1.1</sup>
+# Albe Timeline <sup>2.1.2</sup>
 
 Plugin jQuery para timeline, simples, mas altamente personalizável. Vai ajudar você a renderizar uma linha de tempo responsiva (CSS e HTML) a partir de dados JSON. 
 
