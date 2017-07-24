@@ -151,12 +151,14 @@
 		sortDesc: true,
 	};
 
-	//format
+	//value		= "YYYY-MM-DD" (ISO 8601)
+	//format	=
 	//1.:"dd MMMM"
-	//2.:"dd/MM/aaaaa"
-	//3.:"dd de MMMM de aaaaa"
-	//4.:"DD, dd de MMMM de aaaaa"
-	//default.: "YYYY-MM-DD" (ISO 8601)
+	//2.:"dd/MM/yyyy"
+	//3.:"dd de MMMM de yyyy"
+	//4.:"DD, dd de MMMM de yyyy"
+	//5.:"MM/dd/yyyy"
+	//language	= "pt-BR"
 	function fnDateFormat(value, format, language) {
 
 		var parts = value.split('-');
@@ -179,7 +181,7 @@
 			case 5:
 				return m + "/" + d + "/" + newDate.getFullYear();
 			default:
-				return newDate.getFullYear() + "-" + m + "-" + d;
+				return value;
 		}
 	};
 
