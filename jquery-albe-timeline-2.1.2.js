@@ -163,7 +163,9 @@
 		var newDate = new Date(parts[0], (parts[1] - 1), parts[2]);
 
 		var d = ((newDate.getDate() < 10 ? "0" : "") + newDate.getDate());
-		var m = ((newDate.getMonth() < 10 ? "0" : "") + newDate.getMonth());
+		var m = (((newDate.getMonth() + 1) < 10 ? "0" : "") + (newDate.getMonth() + 1));
+		
+		console.log(m);
 
 		switch (format) {
 			case 1:
