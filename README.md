@@ -1,4 +1,4 @@
-# Albe Timeline <sup>2.1.2</sup>
+# Albe Timeline <sup>3.0.0</sup>
 
 Plugin jQuery para timeline, simples, mas altamente personalizável. Vai ajudar você a renderizar uma linha de tempo responsiva (CSS e HTML) a partir de dados JSON. 
 
@@ -29,7 +29,7 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
 <link rel="stylesheet" href="style-albe-timeline.css" />
 
 <script src="https://cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
-<script src="jquery-albe-timeline-2.1.2.min.js"></script>
+<script src="jquery-albe-timeline-3.0.0.min.js"></script>
 ```
 #### Crie a lista de dados
 ```js
@@ -90,22 +90,19 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
   //**myTimeline**, define o identificador do elemento que irá receber toda a linha de tempo (por exemplo, uma DIV) e deve ser único para cada timeline na página.
   //**data**, define o objeto Json contendo a lista de dados a serem exibidos.
   
-  $("#myTimeline").albeTimeline(data, {
+  $('#myTimeline').albeTimeline(data, {
     //Efeito de apresentação dos itens
-    //"fadeInUp", "bounceIn", "fadeInUp", etc
-    effect: "fadeInUp",
+    //'fadeInUp', 'bounceIn', etc
+    effect: 'zoomInUp',
     //Define a visibilidade do agrupador anual
     showGroup: true,
     //Define a visibilidade do menu com ancora para os agrupamentos anuais (depende de 'showGroup')
     showMenu: true,
     //Especifica a linguagem de exibição dos textos (i18n)
-    language: "pt-BR",
+    language: 'pt-BR',
     //Define o formato de exibição da data
-    //1:"dd MMMM"
-    //2:"dd/MM/aaaaa"
-    //3:"dd de MMMM de aaaaa"
-    //4:"DD, dd de MMMM de aaaaa"
-    formatDate : 1,
+    //'dd/MM/aaaaa', 'dd de MMMM de aaaaa', etc
+    formatDate : 'dd MMMM'
     //Define a ordenação dos itens
     //true: Descendente
     //false: Ascendente
@@ -139,9 +136,9 @@ $(document).ready(function () {
     };
 
     //Internationalization
-    $("#myTimeline").albeTimeline(data, {
-        language: "fr-FR",	//default: pt-BR
-        formatDate: 4		//default: 1
+    $('#myTimeline').albeTimeline(data, {
+        language: 'fr-FR',	//default: pt-BR
+        formatDate: 'DD, dd MMMM aaaaa'
     });
 
 });

@@ -69,6 +69,6 @@ $.fn.albeTimeline.languages = {
 
 //Internationalization
 $("#myTimeline").albeTimeline(data, {
-	language: "fr-FR",  //default: pt-BR
-	formatDate: 4		//default: 1
+	language: "fr-FR",
+	formatDate: 'DD dd MMMM yyyy'
 });

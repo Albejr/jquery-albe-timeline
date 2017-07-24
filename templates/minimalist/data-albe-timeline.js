@@ -32,10 +32,10 @@ var data = [
 
 $(document).ready(function () {
 
-	$("#myTimeline").albeTimeline(data, {
-		effect: "bounceInDown",
+	$('#myTimeline').albeTimeline(data, {
+		effect: 'bounceInDown',
 		showGroup: false,
-		formatDate: 3
+		formatDate: 'dd de MMMM de yyyy'
 	});
 
 });

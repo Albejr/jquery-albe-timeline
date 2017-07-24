@@ -87,6 +87,6 @@ var data = [
 
 $(document).ready(function () {
 
-	$("#myTimeline").albeTimeline(data);
+	$('#myTimeline').albeTimeline(data);
 
 });
