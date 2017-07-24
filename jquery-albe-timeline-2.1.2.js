@@ -151,14 +151,14 @@
 		sortDesc: true,
 	};
 
-	//value		= "YYYY-MM-DD" (ISO 8601)
-	//format	=
+	//value = "YYYY-MM-DD" (ISO 8601)
+	//format =
 	//1.:"dd MMMM"
 	//2.:"dd/MM/yyyy"
 	//3.:"dd de MMMM de yyyy"
 	//4.:"DD, dd de MMMM de yyyy"
 	//5.:"MM/dd/yyyy"
-	//language	= "pt-BR"
+	//language = "pt-BR"
 	function fnDateFormat(value, format, language) {
 
 		var parts = value.split('-');
