@@ -23,6 +23,7 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
 * Opcional
 [Animate CSS](https://daneden.github.io/animate.css)
 
+## Instalação
 Para instalar via Bower, simplismente faça o seguinte:
 ```html
 $ bower install jquery-albe-timeline --save
