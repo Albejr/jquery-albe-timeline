@@ -23,13 +23,18 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
 * Opcional
 [Animate CSS](https://daneden.github.io/animate.css)
 
+Para instalar via Bower, simplismente faça o seguinte:
+```html
+$ bower install jquery-albe-timeline --save
+```
+
 ## Como usar
 #### Carregue o plugin e dependências
 ```html
 <link rel="stylesheet" href="style-albe-timeline.css" />
 
 <script src="https://cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
-<script src="jquery-albe-timeline-3.0.0.min.js"></script>
+<script src="jquery-albe-timeline.min.js"></script>
 ```
 #### Crie a lista de dados
 ```js
