@@ -1,31 +1,32 @@
 {
-  "name": "jquery-albe-timeline",
-  "description": "JQuery plugin for rendering timelines from JSON data.",
-  "version": "3.0.0",
-  "main": "jquery-albe-timeline.js",
-  "dependencies": {
-  },
-  "devDependencies": {
-	"jquery": "latest",
-  	"animate.css": "latest",
-	"bootstrap" : "latest"
-  },
-  "keywords": [
-    "timeline"
-  ],
-  "authors": [{ 
-	"name": "Albertino Júnior", 
-	"homepage": "http://albertino.eti.br" 
-  }],
-  "license": "Unlicense",
-  "homepage": "https://github.com/Albejr/jquery-albe-timeline",
-  "private": true,
-  "ignore": [
-    "*.md",
-	"bower_components"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Albejr/jquery-albe-timeline.git"
-  }
+	"name": "jquery-albe-timeline",
+	"description": "JQuery plugin for rendering timelines from JSON data.",
+	"version": "3.0.0",
+	"main": "jquery-albe-timeline.js",
+	"dependencies": {
+  	},
+  	"devDependencies": {
+		"jquery": "latest",
+  		"animate.css": "latest",
+		"bootstrap" : "latest"
+  	},
+  	"keywords": [
+    		"timeline"
+  	],
+  	"authors": [{ 
+		"name": "Albertino Júnior", 
+		"homepage": "http://albertino.eti.br" 
+  	}],
+  	"license": "Unlicense",
+  	"homepage": "https://github.com/Albejr/jquery-albe-timeline",
+  	"private": true,
+  	"ignore": [
+    		"*.md",
+		"bower_components",
+	  	"templates"
+  	],
+  	"repository": {
+    		"type": "git",
+    		"url": "https://github.com/Albejr/jquery-albe-timeline.git"
+  	}
 }
