@@ -1,1 +1,2 @@
-templates/* linguist-vendored
+* linguist-vendored
+*.js linguist-vendored=false
