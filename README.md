@@ -9,6 +9,8 @@ Além disso, este plugin é capaz de lidar com praticamente qualquer tipo de con
 ## Licença de uso
 O plugin é de código aberto e liberado para uso comercial sem custo. Peço somente que [me comunique](http://albertino.eti.br/#collapse5 "contato") caso implementá-lo em algum lugar, para que eu possa dar uma olhada ou adicioná-lo aqui como demostração.
 
+[![donate](https://www.paypalobjects.com/pt_BR/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NHMCJ2R4A83RW)
+
 ## Demostração
 | HORIZONTAL  | VERTICAL |
 | ------------- | ------------- |
