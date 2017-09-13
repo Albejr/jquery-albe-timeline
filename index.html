@@ -28,25 +28,38 @@
     <link rel="icon" type="image/gif" href="http://cdn.albertino.eti.br/favicon.gif">
 	
 	<style type="text/css">
+	body,
+	html{
+			margin: 0;
+			padding: 0;
+	}
 		body{
-			color: #FFF !important;
+			color: #FFF !important;			
 		}
 		
 		iframe { 
 			border: none;
-			height: 500px;
-			width: 100%;
+			height: 500px;	
+	width: 100%;			
 		}
 		
 		.blend-gradient {
-  background: -webkit-linear-gradient(180deg, rgb(22, 135, 237), rgb(20, 55, 90));
-  background: linear-gradient(180deg, rgb(22, 135, 237), rgb(20, 55, 90));
+background: #23074d;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.centro{
+			margin: 0 auto;
+				width: 90%;
 }
 	</style>
 	
 </head>
 <body class="blend-gradient">
 
+<div class="centro">
 	<h1>Albe Timeline v3.0.0</h1>
 	<p>Renderização de uma timeline com Jquery a partir de uma lista de dados em Json.</p>
 
@@ -60,6 +73,6 @@
 	<iframe src="https://albejr.github.io/jquery-albe-timeline/templates/minimalist/index.html"></iframe>
 	<h2>Audain</h2>
 	<iframe src="https://albejr.github.io/jquery-albe-timeline/templates/audain/index.html"></iframe>
-		
+	</div>	
 </body>
 </html>
