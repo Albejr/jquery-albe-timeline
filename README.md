@@ -113,7 +113,7 @@ $ npm install jquery-albe-timeline --save
     //Especifica a linguagem de exibição dos textos (i18n)
     language: 'pt-BR',
     //Define o formato de exibição da data
-    //'dd/MM/aaaaa', 'dd de MMMM de aaaaa', etc
+    //'dd/MM/yyyy', 'dd de MMMM de yyyy', etc
     formatDate : 'dd MMMM',
     //Define a ordenação dos itens
     //true: Descendente
