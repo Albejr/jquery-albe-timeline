@@ -114,11 +114,11 @@ $ npm install jquery-albe-timeline --save
     language: 'pt-BR',
     //Define o formato de exibição da data
     //'dd/MM/aaaaa', 'dd de MMMM de aaaaa', etc
-    formatDate : 'dd MMMM'
+    formatDate : 'dd MMMM',
     //Define a ordenação dos itens
     //true: Descendente
     //false: Ascendente
-    sortDesc: true,
+    sortDesc: true
   });
 ```
 * Especifique a cultura:
