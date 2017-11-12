@@ -1,17 +1,17 @@
 # Albe Timeline <sup>3.0.0</sup>
 
-Plugin jQuery para timeline, simples, mas altamente personalizável. Vai ajudar você a renderizar uma linha de tempo responsiva (CSS e HTML) a partir de dados JSON. 
+Albe Timeline is a simple yet highly customizable jQuery plugin that helps you render a responsive horizontal (or vertical) timeline from JSON data. 
 
-As informações serão automaticamente agrupadas por ano e a série de eventos serão classificados por data. 
+The data will be automatically grouped by year and the events will be sorted by date. 
 
-Além disso, este plugin é capaz de lidar com praticamente qualquer tipo de conteúdo, tais como imagens, vídeos, áudios e muito mais.
+In addition, this plugin is able to handle almost any type of content such as images, videos, audios and more.
 
-## Licença de uso
-O plugin é de código aberto e liberado para uso comercial sem custo. Peço somente que [me comunique](http://albertino.eti.br/#collapse5 "contato") caso implementá-lo em algum lugar, para que eu possa dar uma olhada ou adicioná-lo aqui como demostração.
+## Use license
+The plugin is open source and released for commercial use without cost. I only ask you to [contact me] (http://albertino.eti.br/#collapse5 "contact") if you implement it somewhere, so I can take a look or add it here as a demonstration.
 
 [![donate](https://www.paypalobjects.com/pt_BR/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NHMCJ2R4A83RW)
 
-## Demostração
+## Demonstration
 | HORIZONTAL  | VERTICAL |
 | ------------- | ------------- |
 | [Template 1](https://albejr.github.io/jquery-albe-timeline/templates/horizontal/index.html "Template Horizontal")  | [Template 1](https://albejr.github.io/jquery-albe-timeline/templates/vertical/index.html "Template Vertical")  |
@@ -19,13 +19,13 @@ O plugin é de código aberto e liberado para uso comercial sem custo. Peço som
 |   | [Template 3](https://albejr.github.io/jquery-albe-timeline/templates/minimalist/index.html "Template Minimalista")  |
 |   | [Template 4](https://albejr.github.io/jquery-albe-timeline/templates/audain/index.html "Template Audain Designs")  |
 
-## Requisitos
-* Necessário
+## Requirements
+* Required
 [Jquery](https://jquery.com)
-* Opcional
+* Optional
 [Animate CSS](https://daneden.github.io/animate.css)
 
-## Instalação
+## Installation
 ### Bower:
 ```html
 $ bower install jquery-albe-timeline --save
@@ -35,19 +35,19 @@ $ bower install jquery-albe-timeline --save
 $ npm install jquery-albe-timeline --save
 ```
 
-## Como usar
-#### Carregue o plugin e dependências
+## How to use
+#### Load the plugin and dependencies
 ```html
 <link rel="stylesheet" href="style-albe-timeline.css" />
 
 <script src="https://cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
 <script src="jquery-albe-timeline.min.js"></script>
 ```
-#### Crie a lista de dados
+#### Create the data list
 ```js
 <script type="text/javascript">
 
-   //Objeto Json
+   //Json object
    var data = [{
          time: '2015-03-29',
          header: 'Sample of header',
@@ -81,14 +81,14 @@ $ npm install jquery-albe-timeline --save
 
 </script>
 ```
-#### Realize a chamada
+#### Make the call
 ```html
 <div id="myTimeline"></div>
 ```
 ```js
 <script type="text/javascript">
 
-  //Objeto Json
+  //Json object
   var data = [{...}];
    
   $(document).ready(function () {
@@ -97,35 +97,35 @@ $ npm install jquery-albe-timeline --save
   
 </script>
 ```
-* Instancie com opções:
+* Instance with options:
 ```js
-  //**myTimeline**, define o identificador do elemento que irá receber toda a linha de tempo (por exemplo, uma DIV) e deve ser único para cada timeline na página.
-  //**data**, define o objeto Json contendo a lista de dados a serem exibidos.
+  //**myTimeline**, sets the identifier of the element that will receive the entire timeline (for example, a DIV) and must be unique for each timeline on the page.
+  //**data**, defines the Json object containing the list of data to be displayed.
   
   $('#myTimeline').albeTimeline(data, {
-    //Efeito de apresentação dos itens
+    //Effect of presentation
     //'fadeInUp', 'bounceIn', etc
     effect: 'zoomInUp',
-    //Define a visibilidade do agrupador anual
+    //Sets the visibility of the annual grouper
     showGroup: true,
-    //Define a visibilidade do menu com ancora para os agrupamentos anuais (depende de 'showGroup')
+    //Sets the anchor menu visibility for annual groupings (depends on 'showGroup')
     showMenu: true,
-    //Especifica a linguagem de exibição dos textos (i18n)
+    //Specifies the display language of texts (i18n)
     language: 'pt-BR',
-    //Define o formato de exibição da data
+    //Sets the date display format
     //'dd/MM/yyyy', 'dd de MMMM de yyyy', etc
     formatDate : 'dd MMMM',
-    //Define a ordenação dos itens
+    //Defines ordering of items
     //true: Descendente
     //false: Ascendente
     sortDesc: true
   });
 ```
-* Especifique a cultura:
+* Set the culture:
 ```js
 $(document).ready(function () {
     
-    //Sobrescreve a CutureInfo padrão do plugin
+    //Overrides the CutureInfo default plugin
     $.fn.albeTimeline.languages = {
         "en-US": {
             days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
@@ -155,8 +155,8 @@ $(document).ready(function () {
 
 });
 ```
-#### Estrutura Html
-Usando os padrões do plugin, teremos um resultado parecido com isso:
+#### Html Structure
+Using the plugin defaults, we'll have a similar result:
 ```html
   <div id="myTimeline">
     <section id="timeline">
@@ -194,17 +194,15 @@ Usando os padrões do plugin, teremos um resultado parecido com isso:
     </section>
   </div>
 ```
-## Notas
-* O objeto Json também é aceito no formato de string. Por exemplo:
+## Notes
+* The Json object is also accepted in string format. For example:
 ```js
 $('#myTimeline').albeTimeline('[{"time": "2016-01-20", "body": [{ "tag": "h1", "content": "Lorem ipsum" }, { "tag": "p", "content": "massa, cursus quisque leo quisque dui." }]}]');
 ```
   
-* O elemento **time** deve atender ao padrão ISO 8601 sempre no formato ano-mês-dia 
+* The **time** element must meet the ISO 8601 standard always in year-month-day format "yyyy-mm-dd"
 
-  "yyyy-mm-dd"
-
-* Caso haja a necessidade de passar uma classe CSS como atributo do elemento, utilize o nome da prorpiedade **cssclass**. Por exemplo:
+* If you need to pass a CSS class as an element attribute, use the property name **cssclass**. For example:
 ```js
   body: [{
     tag: 'img',
@@ -216,7 +214,7 @@ $('#myTimeline').albeTimeline('[{"time": "2016-01-20", "body": [{ "tag": "h1", "
   }
 ```
 
-* Para aspas duplas em atributos, use "escape". Por exemplo:
+* For double quotes in attributes, use "escape". For example:
 ```js
   body: [{
     tag: 'p',
