@@ -7,7 +7,7 @@ The data will be automatically grouped by year and the events will be sorted by 
 In addition, this plugin is able to handle almost any type of content such as images, videos, audios and more.
 
 ## Use license
-The plugin is open source and released for commercial use without cost. I only ask you to [contact me] (http://albertino.eti.br/#collapse5 "contact") if you implement it somewhere, so I can take a look or add it here as a demonstration.
+The plugin is open source and released for commercial use without cost. I only ask you to [contact me](http://albertino.eti.br/#collapse5 "contact") if you implement it somewhere, so I can take a look or add it here as a demonstration.
 
 [![donate](https://www.paypalobjects.com/pt_BR/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NHMCJ2R4A83RW)
 
