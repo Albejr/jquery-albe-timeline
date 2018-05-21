@@ -1,7 +1,7 @@
 {
   "name": "jquery-albe-timeline",
   "description": "JQuery plugin for rendering timelines from JSON data.",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "main": "jquery-albe-timeline.js",
   "dependencies": {
   },

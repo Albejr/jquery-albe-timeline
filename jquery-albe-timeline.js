@@ -1,5 +1,5 @@
 /*!
- * Albe-Timeline v3.0.0, https://github.com/Albejr/jquery-albe-timeline
+ * Albe-Timeline v4.0.0, https://github.com/Albejr/jquery-albe-timeline
  * ======================================================================
  * Plugin para renderização de 'linha do tempo' a partir de listas de dados em JSON
  *
@@ -15,8 +15,7 @@
 		var settings = $.extend({}, $.fn.albeTimeline.defaults, options);
 
 		var idioma = ($.fn.albeTimeline.languages.hasOwnProperty(settings.language)) ?
-			$.fn.albeTimeline.languages[settings.language] :
-			{ // pt-BR
+			$.fn.albeTimeline.languages[settings.language] : { // pt-BR
 				days: ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'],
 				months: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
 				shortMonths: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
@@ -82,7 +81,7 @@
 				$(value2.attr).each(function () {
 					$.each(this, function (index3, value3) {
 						// Atributo especial, defido o 'class' ser palavra reservada no javascript.
-						(index3.toLowerCase() === 'cssclass') ? e.addClass(value3) : e.attr(index3, value3);
+						(index3.toLowerCase() === 'cssclass') ? e.addClass(value3): e.attr(index3, value3);
 					});
 				});
 
@@ -115,7 +114,9 @@
 		var badge = $('<div>').addClass('badge').html('&nbsp;');
 		var ePanel = $('<div>').addClass('panel').append(badge);
 		eTimeline.append($('<article>').append(ePanel));
-		eTimeline.append($('<div>').addClass('clearfix').css({ 'float': 'none' }));
+		eTimeline.append($('<div>').addClass('clearfix').css({
+			'float': 'none'
+		}));
 
 		$.each(eTimeline.find('article'), function (index, value) {
 			// Adiciona classe css responsável por inverter o lado do item.
@@ -125,14 +126,12 @@
 				$(this).addClass('animated ' + settings.effect);
 		});
 
-
 		// A exibição do menu depende da definição de visibilidade do agrupador.
 		if (settings.showGroup) {
 			if (settings.showMenu) {
 				eMenu.appendTo(_this);
 			}
-		}
-		else {
+		} else {
 			$.each(eTimeline.find('div[class*="group"]'), function (index, value) {
 				$(this).css('display', 'none');
 			});
@@ -159,17 +158,17 @@
 	// .:"dd de MMMM de yyyy"
 	// .:"DD, dd de MMMM de yyyy"
 	// .:"MM/dd/yyyy"
-		
-	// Thank you Amit Gupta, https://github.com/amitguptagwl
-	var fnDateFormat = function(value, format, language) {
-		
-		var parts = value.split('-');
-		var newDate = new Date(parts[0], (parts[1] - 1), parts[2]);		
-		
-		if(language.separator) {
+	// .:"DD dd MMMM yyyy HH:mm:ss"
+
+	var fnDateFormat = function (value, format, language) {
+
+		var parts = value.split(/[ :\-\/]/g);
+		var newDate = new Date(parts[0], (parts[1] - 1), parts[2], (parts[3] || 0), (parts[4] || 0), (parts[5] || 0));
+
+		if (language.separator) {
 			format = format.replace(new RegExp(language.separator, 'g'), '___');
 		}
-		
+
 		format = format.replace('ss', padLeft(newDate.getSeconds(), 2));
 		format = format.replace('s', newDate.getSeconds());
 		format = format.replace('dd', padLeft(newDate.getDate(), 2));
@@ -186,15 +185,15 @@
 		format = format.replace('YY', (newDate.getFullYear() + '').substring(2));
 		format = format.replace('HH', padLeft(newDate.getHours(), 2));
 		format = format.replace('H', newDate.getHours());
-		
-		if(language.separator) {
+
+		if (language.separator) {
 			format = format.replace(new RegExp('___', 'g'), language.separator);
 		}
-		
+
 		return format;
 	};
 
-	var padLeft = function(n, width, z) {
+	var padLeft = function (n, width, z) {
 		z = z || '0';
 		n = n + '';
 		return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;

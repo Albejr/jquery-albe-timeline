@@ -1,4 +1,4 @@
-# Albe Timeline <sup>3.0.0</sup>
+# Albe Timeline <sup>4.0.0</sup>
 
 Albe Timeline is a simple yet highly customizable jQuery plugin that helps you render a responsive horizontal (or vertical) timeline from JSON data. 
 
@@ -8,8 +8,6 @@ In addition, this plugin is able to handle almost any type of content such as im
 
 ## Use license
 The plugin is open source and released for commercial use without cost. I only ask you to [contact me](http://albertino.eti.br/#collapse5 "contact") if you implement it somewhere, so I can take a look or add it here as a demonstration.
-
-[![donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NHMCJ2R4A83RW)
 
 ## Demonstration
 | HORIZONTAL  | VERTICAL |
@@ -49,7 +47,7 @@ $ npm install jquery-albe-timeline --save
 
    //Json object
    var data = [{
-         time: '2015-03-29',
+         time: '2015-04-30 23:59:59',
          header: 'Sample of header',
          body: [{
                tag: 'h1',
@@ -113,7 +111,7 @@ $ npm install jquery-albe-timeline --save
     //Specifies the display language of texts (i18n)
     language: 'pt-BR',
     //Sets the date display format
-    //'dd/MM/yyyy', 'dd de MMMM de yyyy', etc
+    //'dd/MM/yyyy', 'dd de MMMM de yyyy HH:mm:ss', etc
     formatDate : 'dd MMMM',
     //Defines ordering of items
     //true: Descendente
