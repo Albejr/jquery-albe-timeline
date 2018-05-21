@@ -198,7 +198,7 @@ Using the plugin defaults, we'll have a similar result:
 $('#myTimeline').albeTimeline('[{"time": "2016-01-20", "body": [{ "tag": "h1", "content": "Lorem ipsum" }, { "tag": "p", "content": "massa, cursus quisque leo quisque dui." }]}]');
 ```
   
-* The **time** element must meet the ISO 8601 standard always in year-month-day format "yyyy-mm-dd"
+* The **time** element must meet the ISO 8601 standard in year-month-day format "yyyy-MM-dd" or "yyyy-MM-dd HH:mm:ss"
 
 * If you need to pass a CSS class as an element attribute, use the property name **cssclass**. For example:
 ```js
