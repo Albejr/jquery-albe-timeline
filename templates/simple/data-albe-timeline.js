@@ -1,10 +1,10 @@
 //Json Object
 var data = [
 	{
-		time: '2015-03-29 23:59:45',
+		time: '2015-03-29',
 		body: [{
 			tag: 'h1',
-			content: "Lorem ipsum 3"
+			content: "Lorem ipsum"
 		},
 		{
 			tag: 'p',
@@ -12,10 +12,10 @@ var data = [
 		}]
 	},
 	{
-		time: '2015-03-29 11:00:30',
+		time: '2015-04-15',
 		body: [{
 			tag: 'h1',
-			content: "Lorem ipsum 1"
+			content: "Lorem ipsum"
 		},
 		{
 			tag: 'p',
@@ -34,10 +34,10 @@ var data = [
 		}]
 	},
 	{
-		time: '2015-03-29 15:45:00',
+		time: '2013-01-20',
 		body: [{
 			tag: 'h1',
-			content: "Lorem ipsum 2"
+			content: "Lorem ipsum"
 		},
 		{
 			tag: 'p',
@@ -70,5 +70,5 @@ $.fn.albeTimeline.languages = {
 //Internationalization
 $("#myTimeline").albeTimeline(data, {
 	language: "fr-FR",
-	formatDate: 'DD dd MMMM yyyy HH:mm:ss'
+	formatDate: 'DD dd MMMM yyyy'
 });
