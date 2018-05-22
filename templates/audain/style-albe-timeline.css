@@ -29,7 +29,7 @@ section#timeline { position: relative; padding-bottom: 24px; overflow: hidden; }
 
     section#timeline > article { position: relative; margin-bottom: 20px; }
 
-        section#timeline > article > div.panel { display: inline-block; background-color: transparent; margin-bottom: 0; border: none; border-radius: 0; -webkit-box-shadow: none; box-shadow: none; }
+        section#timeline > article > div.panel { display: inline-block; background-color: transparent; margin-bottom: 0; border: none; border-radius: 0; -webkit-box-shadow: none; box-shadow: none; width: 100%; }
             section#timeline > article > div.panel:before { content: ' '; width: 20px; height: 20px; background: #F7F7F7; display: block; position: absolute; margin: 0 auto; left: 0; right: 0; top: 38px; border: 2px solid #09F; border-radius: 50%; }
             section#timeline > article > div.panel div.panel-body { text-align: right; border-right: 2px solid #09F; float: left; width: 45%; padding: 10px 25px 10px 25px; position: relative; color: #333; }
                 section#timeline > article > div.panel div.panel-body h3.group-title { text-transform: uppercase; letter-spacing: 2px; font-size: 20px; margin-bottom: 5px; }
