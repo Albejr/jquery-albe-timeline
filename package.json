@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "animate.css": "latest",
-    "bootstrap": "3.3.7"
+    "bootstrap": "3.4.1"
   },
   "keywords": [
     "timeline"
