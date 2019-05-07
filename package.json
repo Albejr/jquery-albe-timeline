@@ -4,7 +4,7 @@
   "version": "4.0.0",
   "main": "jquery-albe-timeline.js",
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.4.1"
   },
   "devDependencies": {
     "animate.css": "latest",
