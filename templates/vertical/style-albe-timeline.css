@@ -10,7 +10,7 @@ ul#timeline-menu { height: 50px; text-align: center; }
             ul#timeline-menu li a:hover { color: #EF693A; border-bottom: 5px solid #EF693A; font-weight: normal; }
 
 section#timeline { width: 90%; margin: 20px auto; padding-bottom: 20px; position: relative; }
-    section#timeline:before { top: 0; bottom: 0; position: absolute; content: " "; width: 2px; background-color: #EF693A; left: 50%; height: 100%; margin-left: -1.5px; }
+    section#timeline:before { top: 0; bottom: 0; position: absolute; content: " "; width: 2px; background-color: #EF693A; left: 50%; height: 100%; margin-left: -1.5px; z-index: -1; }
     section#timeline article { width: 100%; margin-bottom: 20px; position: relative; }
         section#timeline article:after { content: ''; display: block; clear: both; }
 
