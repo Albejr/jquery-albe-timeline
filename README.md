@@ -38,7 +38,7 @@ $ npm install jquery-albe-timeline --save
 ```html
 <link rel="stylesheet" href="style-albe-timeline.css" />
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 <script src="jquery-albe-timeline.min.js"></script>
 ```
 #### Create the data list
