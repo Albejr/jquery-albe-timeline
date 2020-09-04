@@ -44,7 +44,7 @@
 
 		$.each(json, function (index, element) {
 
-			var ano = new Date(element.time).getFullYear();
+			var ano = new Date(element.time).getUTCFullYear();
 			var agrupador = $(eTimeline).find('div.group' + ano);
 
 			// Se o agrupador não existe, cria.
@@ -179,10 +179,10 @@
 		format = format.replace('MMM', language.months[newDate.getMonth()].substring(0, 3));
 		format = format.replace('MM', padLeft((newDate.getMonth() + 1), 2));
 		format = format.replace('DD', language.days[newDate.getDay()]);
-		format = format.replace('yyyy', newDate.getFullYear());
-		format = format.replace('YYYY', newDate.getFullYear());
-		format = format.replace('yy', (newDate.getFullYear() + '').substring(2));
-		format = format.replace('YY', (newDate.getFullYear() + '').substring(2));
+		format = format.replace('yyyy', newDate.getUTCFullYear());
+		format = format.replace('YYYY', newDate.getUTCFullYear());
+		format = format.replace('yy', (newDate.getUTCFullYear() + '').substring(2));
+		format = format.replace('YY', (newDate.getUTCFullYear() + '').substring(2));
 		format = format.replace('HH', padLeft(newDate.getHours(), 2));
 		format = format.replace('H', newDate.getHours());
 
