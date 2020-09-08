@@ -1,4 +1,4 @@
-# Albe Timeline <sup>4.0.0</sup>
+# Albe Timeline <sup>4.0.1</sup>
 
 Albe Timeline is a simple yet highly customizable jQuery plugin that helps you render a responsive horizontal (or vertical) timeline from JSON data. 
 
