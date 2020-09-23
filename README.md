@@ -28,7 +28,7 @@ The plugin is open source and released for commercial use without cost. I only a
 ```html
 $ bower install jquery-albe-timeline --save
 ```
-### Nodejs:
+### Npm:
 ```html
 $ npm install jquery-albe-timeline --save
 ```
