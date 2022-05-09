@@ -8,102 +8,146 @@
 ----------------------------- -->
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <title>Timeline - Albe</title>
 
-<head>
-	<title>Timeline - Albe</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Albertino Júnior" />
+    <meta
+      name="description"
+      content="Renderização de uma timeline em Jquery a partir de uma lista de dados em Json."
+    />
+    <meta name="keywords" content="timeline, json, jquery, linha do tempo" />
+    <meta name="designer" content="Albertino Júnior" />
+    <meta name="revisit-after" content="30 Days" />
+    <meta name="application-name" content="Albertino Júnior" />
 
-	<meta name="author" content="Albertino Júnior" />
-	<meta name="description" content="Renderização de uma timeline em Jquery a partir de uma lista de dados em Json." />
-	<meta name="keywords" content="timeline, json, jquery, linha do tempo" />
-	<meta name="designer" content="Albertino Júnior" />
-	<meta name="revisit-after" content="30 Days" />
-	<meta name="application-name" content="Albertino Júnior" />
+    <link
+      rel="author"
+      type="text/plain"
+      href="http://albertino.eti.br/humans.txt"
+    />
+    <link
+      rel="Shortcut Icon"
+      type="image/x-icon"
+      href="http://cdn.albertino.eti.br/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/gif"
+      href="http://cdn.albertino.eti.br/favicon.gif"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+      }
 
-	<link rel="author" type="text/plain" href="http://albertino.eti.br/humans.txt" />
-	<link rel="Shortcut Icon" type="image/x-icon" href="http://cdn.albertino.eti.br/favicon.ico" />
-	<link rel="icon" type="image/gif" href="http://cdn.albertino.eti.br/favicon.gif">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<style type="text/css">
-		body,
-		html {
-			margin: 0;
-			padding: 0;
-		}
+      body {
+        color: #fff !important;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+      }
 
-		body {
-			color: #FFF !important;
-			font-family: 'Raleway', sans-serif;
-			font-size: 18px;
-		}
+      h1 {
+        font-size: 2.5em;
+        font-weight: bold;
+      }
 
-		h1 {
-			font-size: 2.5em;
-			font-weight: bold;
-		}
+      p {
+        opacity: 0.7;
+      }
 
-		p {
-			opacity: 0.7;
-		}
+      hr,
+      iframe {
+        margin-bottom: 40px;
+      }
 
-		hr,
-		iframe {
-			margin-bottom: 40px;
-		}
+      iframe {
+        border: none;
+        height: 500px;
+        width: 100%;
+      }
 
-		iframe {
-			border: none;
-			height: 500px;
-			width: 100%;
-		}
+      .blend-gradient {
+        background: #23074d;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #cc5333, #23074d);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #cc5333, #23074d);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
 
-		.blend-gradient {
-			background: #23074d;
-			/* fallback for old browsers */
-			background: -webkit-linear-gradient(to left, #cc5333, #23074d);
-			/* Chrome 10-25, Safari 5.1-6 */
-			background: linear-gradient(to left, #cc5333, #23074d);
-			/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-		}
+      .centro {
+        margin: 0 auto;
+        width: 90%;
+      }
+    </style>
+  </head>
 
-		.centro {
-			margin: 0 auto;
-			width: 90%;
-		}
-	</style>
+  <body class="blend-gradient">
+    <div class="centro">
+      <div style="text-align: center">
+        <h1>Albe Timeline v4.0.1</h1>
+        <p>
+          Renderização de uma timeline com Jquery a partir de uma lista de dados
+          em Json.
+        </p>
+        <!-- Place this tag where you want the button to render. -->
+        <a
+          class="github-button"
+          href="https://github.com/Albejr/jquery-albe-timeline"
+          data-icon="octicon-star"
+          data-size="large"
+          data-show-count="true"
+          aria-label="Star Albejr/jquery-albe-timeline on GitHub"
+          >Star</a
+        >
+        <a
+          class="github-button"
+          href="https://github.com/Albejr/jquery-albe-timeline/archive/master.zip"
+          data-icon="octicon-cloud-download"
+          data-size="large"
+          aria-label="Download Albejr/jquery-albe-timeline on GitHub"
+          >Download</a
+        >
+      </div>
+      <h2>Horizontal</h2>
+      <iframe
+        src="https://albejr.github.io/jquery-albe-timeline/templates/horizontal/index.html"
+      ></iframe>
+      <h2>Vertical</h2>
+      <iframe
+        src="https://albejr.github.io/jquery-albe-timeline/templates/vertical/index.html"
+      ></iframe>
+      <h2>Simple</h2>
+      <iframe
+        src="https://albejr.github.io/jquery-albe-timeline/templates/simple/index.html"
+      ></iframe>
+      <h2>Minimalist with hours</h2>
+      <iframe
+        src="https://albejr.github.io/jquery-albe-timeline/templates/minimalist/index.html"
+      ></iframe>
+      <h2>Audain</h2>
+      <iframe
+        src="https://albejr.github.io/jquery-albe-timeline/templates/audain/index.html"
+      ></iframe>
+      <h2>Boostrap</h2>
+      <iframe
+        src="https://albejr.github.io/jquery-albe-timeline/templates/boostrap/index.html"
+      ></iframe>
+      <hr />
+    </div>
 
-</head>
-
-<body class="blend-gradient">
-
-	<div class="centro">
-		<div style="text-align:center;">
-			<h1>Albe Timeline v4.0.1</h1>
-			<p>Renderização de uma timeline com Jquery a partir de uma lista de dados em Json.</p>
-			<!-- Place this tag where you want the button to render. -->
-			<a class="github-button" href="https://github.com/Albejr/jquery-albe-timeline" data-icon="octicon-star" data-size="large"
-			    data-show-count="true" aria-label="Star Albejr/jquery-albe-timeline on GitHub">Star</a>
-			<a class="github-button" href="https://github.com/Albejr/jquery-albe-timeline/archive/master.zip" data-icon="octicon-cloud-download"
-			    data-size="large" aria-label="Download Albejr/jquery-albe-timeline on GitHub">Download</a>
-		</div>
-		<h2>Horizontal</h2>
-		<iframe src="https://albejr.github.io/jquery-albe-timeline/templates/horizontal/index.html"></iframe>
-		<h2>Vertical</h2>
-		<iframe src="https://albejr.github.io/jquery-albe-timeline/templates/vertical/index.html"></iframe>
-		<h2>Simple</h2>
-		<iframe src="https://albejr.github.io/jquery-albe-timeline/templates/simple/index.html"></iframe>
-		<h2>Minimalist with hours</h2>
-		<iframe src="https://albejr.github.io/jquery-albe-timeline/templates/minimalist/index.html"></iframe>
-		<h2>Audain</h2>
-		<iframe src="https://albejr.github.io/jquery-albe-timeline/templates/audain/index.html"></iframe>
-		<hr />
-	</div>
-
-	<!-- Place this tag in your head or just before your close body tag. -->
-	<script async defer src="https://buttons.github.io/buttons.js"></script>
-</body>
-
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
 </html>
