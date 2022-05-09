@@ -1,4 +1,4 @@
-# Albe Timeline <sup>4.0.1</sup>
+# Albe Timeline <sup>4.0.2</sup>
 
 Albe Timeline is a simple yet highly customizable jQuery plugin that helps you render a responsive horizontal (or vertical) timeline from JSON data. 
 
@@ -16,6 +16,7 @@ The plugin is open source and released for commercial use without cost. I only a
 |   | [Template 2](https://albejr.github.io/jquery-albe-timeline/templates/simple/index.html "Template Simples")  |
 |   | [Template 3](https://albejr.github.io/jquery-albe-timeline/templates/minimalist/index.html "Template Minimalista")  |
 |   | [Template 4](https://albejr.github.io/jquery-albe-timeline/templates/audain/index.html "Template Audain Designs")  |
+|   | [Template 5](https://albejr.github.io/jquery-albe-timeline/templates/bootstrap/index.html "Template Bootstrap")  |
 
 ## Requirements
 * Required
