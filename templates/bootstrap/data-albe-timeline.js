@@ -122,12 +122,8 @@ $(function () {
   });
 
   $(".badge").each(function (index) {
-    console.log(index + ": " + $(this).text());
-
     var date_time = $(this).html().split(" | ");
-
     var eTime = $("<span>").addClass("time").html(date_time[1]);
-
     $(this).html(date_time[0]);
     $(this).append("<br>");
     $(this).append(eTime);
