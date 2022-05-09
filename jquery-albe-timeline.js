@@ -1,5 +1,5 @@
 /*!
- * Albe-Timeline v4.0.1, https://github.com/Albejr/jquery-albe-timeline
+ * Albe-Timeline v4.0.2, https://github.com/Albejr/jquery-albe-timeline
  * ======================================================================
  * Plugin para renderização de 'linha do tempo' a partir de listas de dados em JSON
  *
@@ -59,7 +59,7 @@
 
 			/****************************************SLOT <article>****************************************/
 			var badge = $('<div>').addClass('badge');
-			badge.text(fnDateFormat(element.time, settings.formatDate, idioma));
+			badge.html(fnDateFormat(element.time, settings.formatDate, idioma));
 
 			var ePanel = $('<div>').addClass('panel').append(badge);
 
