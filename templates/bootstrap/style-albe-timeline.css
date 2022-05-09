@@ -1,0 +1,119 @@
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  line-height: 1em;
+  color: #333;
+  background-color: #efefef;
+  margin: 0;
+}
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 1;
+  font-size: 16px;
+}
+
+section#timeline {
+  font-size: 12px;
+  text-align: justify;
+  margin: 5px 0px;
+  padding: 0px;
+  position: relative;
+  margin: 50px;
+}
+section#timeline:before {
+  height: 95%;
+  position: absolute;
+  left: 100px;
+  top: 0;
+  content: "";
+  width: 5px;
+  background-color: #2d353c;
+}
+
+section#timeline > article > div.panel:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 10px solid transparent;
+  border-right-color: #fff;
+  left: -20px;
+  top: 30px;
+}
+
+section#timeline > article > div.panel {
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  position: relative;
+  margin-bottom: 15px;
+  left: 100px;
+  margin-left: 40px;
+  background-color: #fff;
+  padding: 20px 25px;
+  border-radius: 6px;
+  width: 65%;
+}
+
+section#timeline:last-child div[class="clearfix"] {
+  display: none;
+}
+section#timeline article div.panel div.badge {
+  padding: 0 0 0 15px;
+  background-color: transparent;
+  color: #333;
+  left: -200px;
+  position: relative;
+  top: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: right;
+}
+section#timeline article div.panel div.badge .time {
+  line-height: 24px;
+  font-size: 20px;
+}
+section#timeline article div.panel div.badge::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 5px solid #2d353c;
+  position: absolute;
+  left: 125px;
+}
+section#timeline article div.panel div.badge:last-child {
+  display: none;
+}
+
+section#timeline article > div.panel .panel-heading {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e7eb;
+  line-height: 30px;
+}
+section#timeline article div.panel .panel-body {
+  padding: 10px 0;
+}
+section#timeline article div.panel .panel-body p {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+section#timeline article div.panel .panel-footer {
+  border-top: 1px solid #e2e7ec;
+  padding-top: 15px;
+}
+section#timeline article div.panel div.badge:last-child::before {
+  content: "...";
+  border: none;
+  background-color: transparent;
+}
+section#timeline article:last-of-type {
+  display: none;
+}
