@@ -1,10 +1,5 @@
-# Albe Timeline <sup>4.0.2</sup>
-
-Albe Timeline is a simple yet highly customizable jQuery plugin that helps you render a responsive horizontal (or vertical) timeline from JSON data. 
-
-The data will be automatically grouped by year and the events will be sorted by date. 
-
-In addition, this plugin is able to handle almost any type of content such as images, videos, audios and more.
+<h1 align="center"><i>Albe Timeline <sup>4.0.2</sup></i></h1>
+<p align="center"><i>Albe Timeline is a simple yet highly customizable jQuery plugin that helps you render a responsive horizontal (or vertical) timeline from JSON data. The data will be automatically grouped by year and the events will be sorted by date. In addition, this plugin is able to handle almost any type of content such as images, videos, audios and more.</i></p>
 
 ## Use license
 The plugin is open source and released for commercial use without cost. I only ask you to [contact me](http://albertino.eti.br/#collapse5 "contact") if you implement it somewhere, so I can take a look or add it here as a demonstration.
