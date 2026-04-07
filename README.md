@@ -2,16 +2,16 @@
 <p align="center"><i>Albe Timeline is a simple yet highly customizable jQuery plugin that helps you render a responsive horizontal (or vertical) timeline from JSON data. The data will be automatically grouped by year and the events will be sorted by date. In addition, this plugin is able to handle almost any type of content such as images, videos, audios and more.</i></p>
 
 ## Use license
-The plugin is open source and released for commercial use without cost. I only ask you to [contact me](http://albertino.eti.br/#collapse5 "contact") if you implement it somewhere, so I can take a look or add it here as a demonstration.
+The plugin is open source and released for commercial use without cost. I only ask you to contact me, if you implement it somewhere, so I can take a look or add it here as a demonstration.
 
 ## Demonstration
 | HORIZONTAL  | VERTICAL |
 | ------------- | ------------- |
-| [Template 1](https://albejr.github.io/jquery-albe-timeline/templates/horizontal/index.html "Template Horizontal")  | [Template 1](https://albejr.github.io/jquery-albe-timeline/templates/vertical/index.html "Template Vertical")  |
-|   | [Template 2](https://albejr.github.io/jquery-albe-timeline/templates/simple/index.html "Template Simples")  |
-|   | [Template 3](https://albejr.github.io/jquery-albe-timeline/templates/minimalist/index.html "Template Minimalista")  |
-|   | [Template 4](https://albejr.github.io/jquery-albe-timeline/templates/audain/index.html "Template Audain Designs")  |
-|   | [Template 5](https://albejr.github.io/jquery-albe-timeline/templates/bootstrap/index.html "Template Bootstrap")  |
+| [Template 1](templates/horizontal/index.html "Template Horizontal")  | [Template 1](templates/vertical/index.html "Template Vertical")  |
+|   | [Template 2](templates/simple/index.html "Template Simples")  |
+|   | [Template 3](templates/minimalist/index.html "Template Minimalista")  |
+|   | [Template 4](templates/audain/index.html "Template Audain Designs")  |
+|   | [Template 5](templates/bootstrap/index.html "Template Bootstrap")  |
 
 ## Requirements
 * Required
@@ -65,7 +65,7 @@ $ npm install jquery-albe-timeline --save
                tag: 'a',
                content: 'MY LINK',
                attr: {
-                  href: 'http://albertino.eti.br',
+                  href: 'http://www.google.com',
                   target: '_blank',
                   title: 'Albertino Júnior'
                }

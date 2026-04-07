@@ -3,7 +3,7 @@
  * ======================================================================
  * Plugin para renderização de 'linha do tempo' a partir de listas de dados em JSON
  *
- * 2017, Albertino Júnior, http://albertino.eti.br
+ * 2017, Albertino Júnior
  */
 (function ($) {
 	$.fn.albeTimeline = function (json, options) {
