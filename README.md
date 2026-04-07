@@ -13,6 +13,8 @@ The plugin is open source and released for commercial use without cost. I only a
 |   | [Template 4](templates/audain/index.html "Template Audain Designs")  |
 |   | [Template 5](templates/bootstrap/index.html "Template Bootstrap")  |
 
+<img width="1794" height="3739" alt="Image" src="https://github.com/user-attachments/assets/76968d9a-783a-4df3-828c-5ff5beacaa6c" />
+
 ## Requirements
 * Required
 [Jquery](https://jquery.com)
